@@ -1,0 +1,1442 @@
+/* FONTS */
+/* Stackicons-Social-Minimal (subset)
+   Includes email, facebook,
+   github, linkedin, twitter. 
+*/
+@font-face {
+  font-family: 'Stackicons-Social';
+  src: url("../font/Stackicons/Stackicons-Social-Minimal.eot");
+  /* IE9 Compat Modes */
+  src: url("../font/Stackicons/Stackicons-Social-Minimal.eot?#iefix") format("embedded-opentype"), url("../font/Stackicons/Stackicons-Social-Minimal.woff") format("woff"), url("../font/Stackicons/Stackicons-Social-Minimal.ttf") format("truetype"), url("../font/Stackicons/Stackicons-Social-Minimal.svg#76cc4077294aa89eeb6c5fa684bb9048") format("svg");
+  /* Legacy iOS */
+  font-style: normal !important;
+  font-weight: 400 !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+  speak: none;
+}
+
+.nav-social{
+  position: relative;
+  left: -0.7rem
+}
+
+/* =============================================================================
+ *     STACKICONS-SOCIAL - BRAND COLOR VARIABLES (2014)  http://stackicons.com
+ *     v1.13 - February 3, 2014
+ * ============================================================================= 
+ */
+/* line 131, ../scss/_construction-kit-stackicons-social.scss */
+.st-embossed {
+  text-shadow: 0 -1px 0 #bbbbbb, 0 1px 0 white;
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.263), 0 -1px 1px rgba(0, 0, 0, 0.05), 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+/* line 141, ../scss/_construction-kit-stackicons-social.scss */
+.st-raised {
+  text-shadow: 0 1px 0 #bbbbbb, 0 -1px 0 white;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.263), 0 1px 1px rgba(0, 0, 0, 0.05), 0 -1px 0 rgba(255, 255, 255, 0.5);
+}
+
+/* line 274, ../scss/_construction-kit-stackicons-social.scss */
+.st-dropshadow {
+  text-shadow: 0 1px 1px #999999;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.395);
+}
+
+/* line 286, ../scss/_construction-kit-stackicons-social.scss */
+.st-glow {
+  text-shadow: 0 0 1px white;
+  text-shadow: 0 0 1px rgba(255, 255, 255, 0.67);
+}
+
+/* line 298, ../scss/_construction-kit-stackicons-social.scss */
+.st-glowshadow {
+  text-shadow: 0 0 1px #777777;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.528);
+}
+
+/* =================================================================
+ *     STACKICONS-SOCIAL - UNICODE CHARACTER MAPPING  
+ *     http://stackicons.com/scss/_unicodes-stackicons-social.scss
+ * =================================================================
+ */
+/* line 131, ../scss/_construction-kit-stackicons-social.scss */
+.st-embossed {
+  text-shadow: 0 -1px 0 #bbbbbb, 0 1px 0 white;
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.263), 0 -1px 1px rgba(0, 0, 0, 0.05), 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+/* line 141, ../scss/_construction-kit-stackicons-social.scss */
+.st-raised {
+  text-shadow: 0 1px 0 #bbbbbb, 0 -1px 0 white;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.263), 0 1px 1px rgba(0, 0, 0, 0.05), 0 -1px 0 rgba(255, 255, 255, 0.5);
+}
+
+/* line 274, ../scss/_construction-kit-stackicons-social.scss */
+.st-dropshadow {
+  text-shadow: 0 1px 1px #999999;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.395);
+}
+
+/* line 286, ../scss/_construction-kit-stackicons-social.scss */
+.st-glow {
+  text-shadow: 0 0 1px white;
+  text-shadow: 0 0 1px rgba(255, 255, 255, 0.67);
+}
+
+/* line 298, ../scss/_construction-kit-stackicons-social.scss */
+.st-glowshadow {
+  text-shadow: 0 0 1px #777777;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.528);
+}
+
+/* default is a horizontal button row, using 
+   inline-block vs float to make positioning 
+   to the right easier using text-align */
+/* line 28, ../scss/stackicons-social-minimal/_css-defaults-stackicons-social-minimal.scss */
+.st-icon, [class^="st-icon-"] {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  /* child elements absolute */
+  position: relative;
+  /* remove inline-block white-space */
+  margin: 0 0 0 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  /* padding isn't used for icons since  
+     pseudo elements use position:absolute
+     and box-sizing:border-box collapses 
+     size, but we need it here for text */
+  padding: 0.143em;
+  /* icons at 2400 but 2048 = 1em, so ratio = 1.171875 */
+  height: 1.45788em;
+  width: 1.45788em;
+  font-size: 3em;
+  /* btn or icon only - text hidden */
+  text-align: left;
+  text-indent: -9999px;
+  /* ie7 inline-block hack */
+  zoom: 1;
+  *display: inline;
+}
+
+/* for vertical lists with text */
+/* line 58, ../scss/stackicons-social-minimal/_css-defaults-stackicons-social-minimal.scss */
+.nav-list {
+  font-size: 62.5%;
+}
+
+/* line 60, ../scss/stackicons-social-minimal/_css-defaults-stackicons-social-minimal.scss */
+.nav-list .st-icon, .nav-list [class^="st-icon-"] {
+  display: block;
+  height: auto;
+  min-height: 1.45788em;
+  line-height: 1.3;
+  width: auto;
+  margin-left: -0.143em;
+  padding-left: 1.61788em;
+  text-indent: 0;
+}
+
+/* line 75, ../scss/stackicons-social-minimal/_css-defaults-stackicons-social-minimal.scss */
+.st-icon-only.nav-list .st-icon, .st-icon-only.nav-list [class^="st-icon-"] {
+  padding-left: 1.53788em;
+}
+
+/* line 82, ../scss/stackicons-social-minimal/_css-defaults-stackicons-social-minimal.scss */
+.nav-list-tighter {
+  margin-bottom: -.1em;
+}
+
+/* line 86, ../scss/stackicons-social-minimal/_css-defaults-stackicons-social-minimal.scss */
+.nav-list a {
+  color: #666;
+}
+/* line 87, ../scss/stackicons-social-minimal/_css-defaults-stackicons-social-minimal.scss */
+.nav-list a:hover, .nav-list a:focus {
+  color: #333;
+}
+/* line 89, ../scss/stackicons-social-minimal/_css-defaults-stackicons-social-minimal.scss */
+.nav-list a:active {
+  color: #000;
+}
+
+/* Icons use position: absolute to stack.
+   Pseudo-elements display icons so they don't 
+   render in unstyled html. Extra <span> needed 
+   in markup to stack more than two elements.
+
+   <b> and <i> reserved for button styling --  
+   bevels, and inline-border. 
+
+   Remember, these are child elements so they 
+   will inherit, and cascade em units from 
+   span, b, and i.
+*/
+/* line 119, ../scss/stackicons-social-minimal/_css-defaults-stackicons-social-minimal.scss */
+.st-icon:before,
+.st-icon:after,
+.st-icon span:before,
+.st-icon span:after,
+.st-icon b:before,
+.st-icon b:after,
+.st-icon i:before,
+.st-icon i:after,
+[class^="st-icon-"]:before,
+[class^="st-icon-"]:after,
+[class^="st-icon-"] span:before,
+[class^="st-icon-"] span:after,
+[class^="st-icon-"] b:before,
+[class^="st-icon-"] b:after,
+[class^="st-icon-"] i:before,
+[class^="st-icon-"] i:after {
+  /* transition */
+  -webkit-transition: color 0.2s ease-out, background 0.2s ease-out;
+  -moz-transition: color 0.2s ease-out, background 0.2s ease-out;
+  -o-transition: color 0.2s ease-out, background 0.2s ease-out;
+  -ms-transition: color 0.2s ease-out, background 0.2s ease-out;
+  transition: color 0.2s ease-out, background 0.2s ease-out;
+  display: block;
+  position: absolute;
+  white-space: normal;
+  top: 0.113em;
+  left: 0.143em;
+  text-indent: 0;
+  font-size: 1em;
+  font-family: "Stackicons-Social";
+  font-weight: 400 !important;
+  font-style: normal !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+  /* screenreaders */
+  speak: none;
+}
+
+/* line 141, ../scss/stackicons-social-minimal/_css-defaults-stackicons-social-minimal.scss */
+.nav-left, .nav-center {
+  margin-left: -0.143em;
+}
+
+/* line 146, ../scss/stackicons-social-minimal/_css-defaults-stackicons-social-minimal.scss */
+.nav-right {
+  margin-right: -0.143em;
+}
+
+/* line 151, ../scss/stackicons-social-minimal/_css-defaults-stackicons-social-minimal.scss */
+.text-left, .nav-left {
+  text-align: left;
+}
+
+/* line 155, ../scss/stackicons-social-minimal/_css-defaults-stackicons-social-minimal.scss */
+.text-right, .nav-right {
+  text-align: right;
+}
+
+/* line 159, ../scss/stackicons-social-minimal/_css-defaults-stackicons-social-minimal.scss */
+.text-center, .nav-center {
+  text-align: center;
+}
+
+/* line 163, ../scss/stackicons-social-minimal/_css-defaults-stackicons-social-minimal.scss */
+.text-justify, .nav-justify {
+  text-align: justify;
+}
+
+/* line 248, ../scss/stackicons-social-minimal/_css-defaults-stackicons-social-minimal.scss */
+.raise-on-hover .st-icon:focus,
+.raise-on-hover .st-icon:hover,
+.raise-on-hover.st-icon:focus,
+.raise-on-hover.st-icon:hover,
+[class^="st-icon-"].raise-on-hover:focus,
+[class^="st-icon-"].raise-on-hover:hover,
+[class^="st-icon-"].raise-on-hover:focus,
+[class^="st-icon-"].raise-on-hover:hover {
+  top: -1px;
+}
+
+/* line 266, ../scss/stackicons-social-minimal/_css-defaults-stackicons-social-minimal.scss */
+.raise-on-hover .st-icon:active,
+.raise-on-hover.st-icon:active,
+[class^="st-icon-"].raise-on-hover:active,
+[class^="st-icon-"].raise-on-hover:active {
+  top: 0px;
+}
+
+/* line 273, ../scss/stackicons-social-minimal/_css-defaults-stackicons-social-minimal.scss */
+.raise-on-hover .st-icon:active:before,
+.raise-on-hover.st-icon:active:before,
+.raise-on-hover [class^="st-icon-"]:active:before,
+[class^="st-icon-"].raise-on-hover:active:before {
+  text-shadow: none;
+}
+
+/* line 304, ../scss/stackicons-social-minimal/_css-defaults-stackicons-social-minimal.scss */
+.st-icon-email:before {
+  content: "\e04b";
+  color: #aeb1b4;
+  /*custom color*/
+  color: #bcbcbc;
+}
+
+/* line 3188, ../scss/stackicons-social-minimal/_css-defaults-stackicons-social-minimal.scss */
+.st-icon-email:hover:before,
+.st-icon-email:focus:before {
+  color: #d6d8da;
+  color: #ffffff;
+}
+
+/* line 304, ../scss/stackicons-social-minimal/_css-defaults-stackicons-social-minimal.scss */
+.st-icon-email2:before {
+  content: "\e04b";
+  color: #aeb1b4;
+}
+
+/* line 3188, ../scss/stackicons-social-minimal/_css-defaults-stackicons-social-minimal.scss */
+.st-icon-email2:hover:before,
+.st-icon-email2:focus:before {
+  color: #d6d8da;
+  color: #d6d8da;
+}
+
+/* line 304, ../scss/stackicons-social-minimal/_css-defaults-stackicons-social-minimal.scss */
+.st-icon-facebook:before {
+  content: "\e022";
+  color: #3b5998;
+}
+
+/* line 3188, ../scss/stackicons-social-minimal/_css-defaults-stackicons-social-minimal.scss */
+.st-icon-facebook:hover:before,
+.st-icon-facebook:focus:before {
+  color: #91a8d7;
+  color: #91a8d7;
+}
+
+/* line 304, ../scss/stackicons-social-minimal/_css-defaults-stackicons-social-minimal.scss */
+.st-icon-facebook-alt:before {
+  content: "\e02b";
+  color: #3b5998;
+}
+
+/* line 3188, ../scss/stackicons-social-minimal/_css-defaults-stackicons-social-minimal.scss */
+.st-icon-facebook-alt:hover:before,
+.st-icon-facebook-alt:focus:before {
+  color: #91a8d7;
+  color: #91a8d7;
+}
+
+/* line 304, ../scss/stackicons-social-minimal/_css-defaults-stackicons-social-minimal.scss */
+.st-icon-github:before {
+  content: "\e17b";
+  color: #36383a;
+}
+
+/* line 3188, ../scss/stackicons-social-minimal/_css-defaults-stackicons-social-minimal.scss */
+.st-icon-github:hover:before,
+.st-icon-github:focus:before {
+  color: #a2a5a9;
+  color: #a2a5a9;
+}
+
+/* line 304, ../scss/stackicons-social-minimal/_css-defaults-stackicons-social-minimal.scss */
+.st-icon-github-alt:before {
+  content: "\e182";
+  color: #36383a;
+}
+
+/* line 3188, ../scss/stackicons-social-minimal/_css-defaults-stackicons-social-minimal.scss */
+.st-icon-github-alt:hover:before,
+.st-icon-github-alt:focus:before {
+  color: #a2a5a9;
+  color: #a2a5a9;
+}
+/* line 304, ../scss/stackicons-social-minimal/_css-defaults-stackicons-social-minimal.scss */
+.st-icon-googleplus:before {
+  content: "\e03b";
+  color: #f2301c;
+  /*custom color*/
+  color: #bcbcbc;
+}
+
+/* line 3188, ../scss/stackicons-social-minimal/_css-defaults-stackicons-social-minimal.scss */
+.st-icon-googleplus:hover:before,
+.st-icon-googleplus:focus:before {
+  color: #f9978d;
+  color: #f2301c;
+}
+
+/* line 304, ../scss/stackicons-social-minimal/_css-defaults-stackicons-social-minimal.scss */
+.st-icon-linkedin:before {
+  content: "\e25b";
+  color: #107eb8;
+  /*custom color*/
+  color: #bcbcbc;
+}
+
+/* line 3188, ../scss/stackicons-social-minimal/_css-defaults-stackicons-social-minimal.scss */
+.st-icon-linkedin:hover:before,
+.st-icon-linkedin:focus:before {
+  color: #70c6f3;
+  color: #107eb8;
+}
+
+/* line 304, ../scss/stackicons-social-minimal/_css-defaults-stackicons-social-minimal.scss */
+.st-icon-twitter:before {
+  content: "\e032";
+  color: #00bcf6;
+  /*custom color*/
+  color: #bcbcbc;
+}
+
+/* line 3188, ../scss/stackicons-social-minimal/_css-defaults-stackicons-social-minimal.scss */
+.st-icon-twitter:hover:before,
+.st-icon-twitter:focus:before {
+  color: #7be0ff;
+  color: #00bcf6;
+}
+
+/* 
+  - .st-icon-only:        no button, icon only
+  also:
+    .st-icon-rounded5 (yes, it's not really rounded)
+    .st-icon-r5
+*/
+
+/* line 51, ../scss/stackicons-social-minimal/_override-icon-only-stackicons-social-minimal.scss */
+.st-icon-only .st-icon-email:before,
+.st-icon-only.st-icon-email:before,
+.st-icon-rounded5 .st-icon-email:before,
+.st-icon-rounded5.st-icon-email:before,
+.st-icon-r5 .st-icon-email:before,
+.st-icon-r5.st-icon-email:before {
+  content: "\e04f";
+}
+
+/* line 1380, ../scss/stackicons-social-minimal/_override-icon-only-stackicons-social-minimal.scss */
+.st-icon-only .st-icon-email:hover:before,
+.st-icon-only.st-icon-email:hover:before,
+.st-icon-rounded5 .st-icon-email:hover:before,
+.st-icon-rounded5.st-icon-email:hover:before,
+.st-icon-r5 .st-icon-email:hover:before,
+.st-icon-r5.st-icon-email:hover:before,
+.st-icon-only .st-icon-email:focus:before,
+.st-icon-only.st-icon-email:focus:before,
+.st-icon-rounded5 .st-icon-email:focus:before,
+.st-icon-rounded5.st-icon-email:focus:before,
+.st-icon-r5 .st-icon-email:focus:before,
+.st-icon-r5.st-icon-email:focus:before {
+  content: "\e04f";
+}
+
+/* line 51, ../scss/stackicons-social-minimal/_override-icon-only-stackicons-social-minimal.scss */
+.st-icon-only .st-icon-email2:before,
+.st-icon-only.st-icon-email2:before,
+.st-icon-rounded5 .st-icon-email2:before,
+.st-icon-rounded5.st-icon-email2:before,
+.st-icon-r5 .st-icon-email2:before,
+.st-icon-r5.st-icon-email2:before {
+  content: "\e04f";
+}
+
+/* line 1380, ../scss/stackicons-social-minimal/_override-icon-only-stackicons-social-minimal.scss */
+.st-icon-only .st-icon-email2:hover:before,
+.st-icon-only.st-icon-email2:hover:before,
+.st-icon-rounded5 .st-icon-email2:hover:before,
+.st-icon-rounded5.st-icon-email2:hover:before,
+.st-icon-r5 .st-icon-email2:hover:before,
+.st-icon-r5.st-icon-email2:hover:before,
+.st-icon-only .st-icon-email2:focus:before,
+.st-icon-only.st-icon-email2:focus:before,
+.st-icon-rounded5 .st-icon-email2:focus:before,
+.st-icon-rounded5.st-icon-email2:focus:before,
+.st-icon-r5 .st-icon-email2:focus:before,
+.st-icon-r5.st-icon-email2:focus:before {
+  content: "\e04f";
+}
+
+/* line 51, ../scss/stackicons-social-minimal/_override-icon-only-stackicons-social-minimal.scss */
+.st-icon-only .st-icon-facebook:before,
+.st-icon-only.st-icon-facebook:before,
+.st-icon-rounded5 .st-icon-facebook:before,
+.st-icon-rounded5.st-icon-facebook:before,
+.st-icon-r5 .st-icon-facebook:before,
+.st-icon-r5.st-icon-facebook:before {
+  content: "\e026";
+}
+
+/* line 1380, ../scss/stackicons-social-minimal/_override-icon-only-stackicons-social-minimal.scss */
+.st-icon-only .st-icon-facebook:hover:before,
+.st-icon-only.st-icon-facebook:hover:before,
+.st-icon-rounded5 .st-icon-facebook:hover:before,
+.st-icon-rounded5.st-icon-facebook:hover:before,
+.st-icon-r5 .st-icon-facebook:hover:before,
+.st-icon-r5.st-icon-facebook:hover:before,
+.st-icon-only .st-icon-facebook:focus:before,
+.st-icon-only.st-icon-facebook:focus:before,
+.st-icon-rounded5 .st-icon-facebook:focus:before,
+.st-icon-rounded5.st-icon-facebook:focus:before,
+.st-icon-r5 .st-icon-facebook:focus:before,
+.st-icon-r5.st-icon-facebook:focus:before {
+  content: "\e026";
+}
+
+/* line 51, ../scss/stackicons-social-minimal/_override-icon-only-stackicons-social-minimal.scss */
+.st-icon-only .st-icon-facebook-alt:before,
+.st-icon-only.st-icon-facebook-alt:before,
+.st-icon-rounded5 .st-icon-facebook-alt:before,
+.st-icon-rounded5.st-icon-facebook-alt:before,
+.st-icon-r5 .st-icon-facebook-alt:before,
+.st-icon-r5.st-icon-facebook-alt:before {
+  content: "\e02f";
+}
+
+/* line 1380, ../scss/stackicons-social-minimal/_override-icon-only-stackicons-social-minimal.scss */
+.st-icon-only .st-icon-facebook-alt:hover:before,
+.st-icon-only.st-icon-facebook-alt:hover:before,
+.st-icon-rounded5 .st-icon-facebook-alt:hover:before,
+.st-icon-rounded5.st-icon-facebook-alt:hover:before,
+.st-icon-r5 .st-icon-facebook-alt:hover:before,
+.st-icon-r5.st-icon-facebook-alt:hover:before,
+.st-icon-only .st-icon-facebook-alt:focus:before,
+.st-icon-only.st-icon-facebook-alt:focus:before,
+.st-icon-rounded5 .st-icon-facebook-alt:focus:before,
+.st-icon-rounded5.st-icon-facebook-alt:focus:before,
+.st-icon-r5 .st-icon-facebook-alt:focus:before,
+.st-icon-r5.st-icon-facebook-alt:focus:before {
+  content: "\e02f";
+}
+
+/* line 51, ../scss/stackicons-social-minimal/_override-icon-only-stackicons-social-minimal.scss */
+.st-icon-only .st-icon-github:before,
+.st-icon-only.st-icon-github:before,
+.st-icon-rounded5 .st-icon-github:before,
+.st-icon-rounded5.st-icon-github:before,
+.st-icon-r5 .st-icon-github:before,
+.st-icon-r5.st-icon-github:before {
+  content: "\e17f";
+}
+
+/* line 1380, ../scss/stackicons-social-minimal/_override-icon-only-stackicons-social-minimal.scss */
+.st-icon-only .st-icon-github:hover:before,
+.st-icon-only.st-icon-github:hover:before,
+.st-icon-rounded5 .st-icon-github:hover:before,
+.st-icon-rounded5.st-icon-github:hover:before,
+.st-icon-r5 .st-icon-github:hover:before,
+.st-icon-r5.st-icon-github:hover:before,
+.st-icon-only .st-icon-github:focus:before,
+.st-icon-only.st-icon-github:focus:before,
+.st-icon-rounded5 .st-icon-github:focus:before,
+.st-icon-rounded5.st-icon-github:focus:before,
+.st-icon-r5 .st-icon-github:focus:before,
+.st-icon-r5.st-icon-github:focus:before {
+  content: "\e17f";
+}
+
+/* line 51, ../scss/stackicons-social-minimal/_override-icon-only-stackicons-social-minimal.scss */
+.st-icon-only .st-icon-github-alt:before,
+.st-icon-only.st-icon-github-alt:before,
+.st-icon-rounded5 .st-icon-github-alt:before,
+.st-icon-rounded5.st-icon-github-alt:before,
+.st-icon-r5 .st-icon-github-alt:before,
+.st-icon-r5.st-icon-github-alt:before {
+  content: "\e186";
+}
+
+/* line 1380, ../scss/stackicons-social-minimal/_override-icon-only-stackicons-social-minimal.scss */
+.st-icon-only .st-icon-github-alt:hover:before,
+.st-icon-only.st-icon-github-alt:hover:before,
+.st-icon-rounded5 .st-icon-github-alt:hover:before,
+.st-icon-rounded5.st-icon-github-alt:hover:before,
+.st-icon-r5 .st-icon-github-alt:hover:before,
+.st-icon-r5.st-icon-github-alt:hover:before,
+.st-icon-only .st-icon-github-alt:focus:before,
+.st-icon-only.st-icon-github-alt:focus:before,
+.st-icon-rounded5 .st-icon-github-alt:focus:before,
+.st-icon-rounded5.st-icon-github-alt:focus:before,
+.st-icon-r5 .st-icon-github-alt:focus:before,
+.st-icon-r5.st-icon-github-alt:focus:before {
+  content: "\e186";
+}
+
+/* line 51, ../scss/stackicons-social-minimal/_override-icon-only-stackicons-social-minimal.scss */
+.st-icon-only .st-icon-googleplus:before,
+.st-icon-only.st-icon-googleplus:before,
+.st-icon-rounded5 .st-icon-googleplus:before,
+.st-icon-rounded5.st-icon-googleplus:before,
+.st-icon-r5 .st-icon-googleplus:before,
+.st-icon-r5.st-icon-googleplus:before {
+  content: "\e03f";
+}
+
+/* line 1380, ../scss/stackicons-social-minimal/_override-icon-only-stackicons-social-minimal.scss */
+.st-icon-only .st-icon-googleplus:hover:before,
+.st-icon-only.st-icon-googleplus:hover:before,
+.st-icon-rounded5 .st-icon-googleplus:hover:before,
+.st-icon-rounded5.st-icon-googleplus:hover:before,
+.st-icon-r5 .st-icon-googleplus:hover:before,
+.st-icon-r5.st-icon-googleplus:hover:before,
+.st-icon-only .st-icon-googleplus:focus:before,
+.st-icon-only.st-icon-googleplus:focus:before,
+.st-icon-rounded5 .st-icon-googleplus:focus:before,
+.st-icon-rounded5.st-icon-googleplus:focus:before,
+.st-icon-r5 .st-icon-googleplus:focus:before,
+.st-icon-r5.st-icon-googleplus:focus:before {
+  content: "\e03f";
+}
+
+/* line 51, ../scss/stackicons-social-minimal/_override-icon-only-stackicons-social-minimal.scss */
+.st-icon-only .st-icon-linkedin:before,
+.st-icon-only.st-icon-linkedin:before,
+.st-icon-rounded5 .st-icon-linkedin:before,
+.st-icon-rounded5.st-icon-linkedin:before,
+.st-icon-r5 .st-icon-linkedin:before,
+.st-icon-r5.st-icon-linkedin:before {
+  content: "\e25f";
+}
+
+/* line 1380, ../scss/stackicons-social-minimal/_override-icon-only-stackicons-social-minimal.scss */
+.st-icon-only .st-icon-linkedin:hover:before,
+.st-icon-only.st-icon-linkedin:hover:before,
+.st-icon-rounded5 .st-icon-linkedin:hover:before,
+.st-icon-rounded5.st-icon-linkedin:hover:before,
+.st-icon-r5 .st-icon-linkedin:hover:before,
+.st-icon-r5.st-icon-linkedin:hover:before,
+.st-icon-only .st-icon-linkedin:focus:before,
+.st-icon-only.st-icon-linkedin:focus:before,
+.st-icon-rounded5 .st-icon-linkedin:focus:before,
+.st-icon-rounded5.st-icon-linkedin:focus:before,
+.st-icon-r5 .st-icon-linkedin:focus:before,
+.st-icon-r5.st-icon-linkedin:focus:before {
+  content: "\e25f";
+}
+
+/* line 51, ../scss/stackicons-social-minimal/_override-icon-only-stackicons-social-minimal.scss */
+.st-icon-only .st-icon-twitter:before,
+.st-icon-only.st-icon-twitter:before,
+.st-icon-rounded5 .st-icon-twitter:before,
+.st-icon-rounded5.st-icon-twitter:before,
+.st-icon-r5 .st-icon-twitter:before,
+.st-icon-r5.st-icon-twitter:before {
+  content: "\e036";
+}
+
+/* line 1380, ../scss/stackicons-social-minimal/_override-icon-only-stackicons-social-minimal.scss */
+.st-icon-only .st-icon-twitter:hover:before,
+.st-icon-only.st-icon-twitter:hover:before,
+.st-icon-rounded5 .st-icon-twitter:hover:before,
+.st-icon-rounded5.st-icon-twitter:hover:before,
+.st-icon-r5 .st-icon-twitter:hover:before,
+.st-icon-r5.st-icon-twitter:hover:before,
+.st-icon-only .st-icon-twitter:focus:before,
+.st-icon-only.st-icon-twitter:focus:before,
+.st-icon-rounded5 .st-icon-twitter:focus:before,
+.st-icon-rounded5.st-icon-twitter:focus:before,
+.st-icon-r5 .st-icon-twitter:focus:before,
+.st-icon-r5.st-icon-twitter:focus:before {
+  content: "\e036";
+}
+
+/* STACKICONS-SOCIAL "MULTI-COLOR" CLASSES
+
+Using absolute positioning, we stack multiple 
+font characters to create "multi-color" icons, 
+e.g., the blue & pink dots in the Flickr logo. 
+
+Often, the .st-multi-color version is simply 
+a solid button b.g. shape with a white icon.
+This allows us to use text-shadow effects on 
+the button and logo separately (in the single 
+color version the logo is "cut out" of b.g.).
+
+There is a default button shape for multi-color 
+icons, $btn-shape-c0-default, that is set in 
+_unicodes-stackicons-social.scss. It mirrors 
+the $btn-shape-default set for single color icons 
+in _construction-kit-stackicons-social.scss */
+/* line 284, ../scss/_multi-color-kit-stackicons-social.scss */
+.st-multi-color .st-icon:hover,
+.st-multi-color.st-icon:hover,
+.st-multi-color [class^="st-icon-"]:hover,
+[class^="st-icon-"].st-multi-color:hover,
+.st-multi-color .st-icon:active,
+.st-multi-color.st-icon:active,
+.st-multi-color [class^="st-icon-"]:active,
+[class^="st-icon-"].st-multi-color:active,
+.st-multi-color .st-icon:focus,
+.st-multi-color.st-icon:focus,
+.st-multi-color [class^="st-icon-"]:focus,
+[class^="st-icon-"].st-multi-color:focus {
+  opacity: 100%;
+}
+
+/* STACKICONS-SOCIAL "MULTI-COLOR" CLASSES
+
+Using absolute positioning, we stack multiple 
+font characters to create "multi-color" icons, 
+e.g., the blue & pink dots in the Flickr logo. 
+
+Often, the .st-multi-color version is simply 
+a solid button b.g. shape with a white icon.
+This allows us to use text-shadow effects on 
+the button and logo separately (in the single 
+color version the logo is "cut out" of b.g.).
+
+There is a default button shape for multi-color 
+icons, $btn-shape-c0-default, that is set in 
+_unicodes-stackicons-social.scss. It mirrors 
+the $btn-shape-default set for single color icons 
+in _construction-kit-stackicons-social.scss */
+/* line 284, ../scss/_multi-color-kit-stackicons-social.scss */
+.st-multi-color .st-icon:hover,
+.st-multi-color.st-icon:hover,
+.st-multi-color [class^="st-icon-"]:hover,
+[class^="st-icon-"].st-multi-color:hover,
+.st-multi-color .st-icon:active,
+.st-multi-color.st-icon:active,
+.st-multi-color [class^="st-icon-"]:active,
+[class^="st-icon-"].st-multi-color:active,
+.st-multi-color .st-icon:focus,
+.st-multi-color.st-icon:focus,
+.st-multi-color [class^="st-icon-"]:focus,
+[class^="st-icon-"].st-multi-color:focus {
+  opacity: 100%;
+}
+
+/* Stackicons-Social-Minimal Brand List
+
+adn, codepen, dribbble, dribbble-alt, email, email2, facebook, facebook-alt, flickr, github, github-alt, gmail, gmail-alt, googleplus, instagram, linkedin, pinboard, pinterest, rss, tumblr, twitter, vimeo, youtube, youtube2, youtube-alt, youtube-alt-sm
+
+nav elements:
+menu, menu-alt, menu-alt2, triangle-down, search, search-alt
+*/
+
+/* line 40, ../scss/stackicons-social-minimal/_multi-color-css-stackicons-social-minimal.scss */
+.st-multi-color .st-icon-email2:before,
+.st-multi-color.st-icon-email2:before {
+  text-shadow: none;
+  content: "\e002";
+  color: #ececec;
+}
+
+/* line 579, ../scss/stackicons-social-minimal/_multi-color-css-stackicons-social-minimal.scss */
+.st-multi-color .st-icon-email2:hover:before,
+.st-multi-color.st-icon-email2:hover:before,
+.st-multi-color .st-icon-email2:focus:before,
+.st-multi-color.st-icon-email2:focus:before {
+  text-shadow: none;
+  color: #f3f3f3;
+}
+
+/* line 1053, ../scss/stackicons-social-minimal/_multi-color-css-stackicons-social-minimal.scss */
+.st-multi-color .st-icon-email2:after,
+.st-multi-color.st-icon-email2:after {
+  text-shadow: none;
+  content: "\e04f";
+  color: #aeb1b4;
+}
+
+/* line 1603, ../scss/stackicons-social-minimal/_multi-color-css-stackicons-social-minimal.scss */
+.st-multi-color .st-icon-email2:hover:after,
+.st-multi-color.st-icon-email2:hover:after,
+.st-multi-color .st-icon-email2:focus:after,
+.st-multi-color.st-icon-email2:focus:after {
+  text-shadow: 0 1px 1px #999999;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.395);
+  color: #caccce;
+}
+
+/* line 1777, ../scss/stackicons-social-minimal/_multi-color-css-stackicons-social-minimal.scss */
+.st-icon-only.st-multi-color .st-icon-email2:before,
+.st-icon-only .st-multi-color.st-icon-email2:before,
+.st-icon-only.st-multi-color.st-icon-email2:before,
+.st-multi-color .st-icon-only.st-icon-email2:before,
+.st-icon-rounded5.st-multi-color .st-icon-email2:before,
+.st-icon-rounded5 .st-multi-color.st-icon-email2:before,
+.st-icon-rounded5.st-multi-color.st-icon-email2:before,
+.st-multi-color .st-icon-rounded5.st-icon-email2:before,
+.st-icon-r5.st-multi-color .st-icon-email2:before,
+.st-icon-r5 .st-multi-color.st-icon-email2:before,
+.st-icon-r5.st-multi-color.st-icon-email2:before,
+.st-multi-color .st-icon-r5.st-icon-email2:before {
+  content: "" !important;
+  text-shadow: none;
+  content: "\e048" !important;
+  text-shadow: none;
+  color: #aeb1b4;
+}
+
+/* line 1887, ../scss/stackicons-social-minimal/_multi-color-css-stackicons-social-minimal.scss */
+.st-icon-only.st-multi-color .st-icon-email2:hover:before,
+.st-icon-only .st-multi-color.st-icon-email2:hover:before,
+.st-icon-only.st-multi-color.st-icon-email2:hover:before,
+.st-multi-color .st-icon-only.st-icon-email2:hover:before,
+.st-icon-only.st-multi-color .st-icon-email2:focus:before,
+.st-icon-only .st-multi-color.st-icon-email2:focus:before,
+.st-icon-only.st-multi-color.st-icon-email2:focus:before,
+.st-multi-color .st-icon-only.st-icon-email2:focus:before,
+.st-icon-rounded5.st-multi-color .st-icon-email2:hover:before,
+.st-icon-rounded5 .st-multi-color.st-icon-email2:hover:before,
+.st-icon-rounded5.st-multi-color.st-icon-email2:hover:before,
+.st-multi-color .st-icon-rounded5.st-icon-email2:hover:before,
+.st-icon-rounded5.st-multi-color .st-icon-email2:focus:before,
+.st-icon-rounded5 .st-multi-color.st-icon-email2:focus:before,
+.st-icon-rounded5.st-multi-color.st-icon-email2:focus:before,
+.st-multi-color .st-icon-rounded5.st-icon-email2:focus:before,
+.st-icon-r5.st-multi-color .st-icon-email2:hover:before,
+.st-icon-r5 .st-multi-color.st-icon-email2:hover:before,
+.st-icon-r5.st-multi-color.st-icon-email2:hover:before,
+.st-multi-color .st-icon-r5.st-icon-email2:hover:before,
+.st-icon-r5.st-multi-color .st-icon-email2:focus:before,
+.st-icon-r5 .st-multi-color.st-icon-email2:focus:before,
+.st-icon-r5.st-multi-color.st-icon-email2:focus:before,
+.st-multi-color .st-icon-r5.st-icon-email2:focus:before {
+  text-shadow: 0 1px 1px #999999;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.395);
+  color: #caccce;
+}
+
+/* line 1956, ../scss/stackicons-social-minimal/_multi-color-css-stackicons-social-minimal.scss */
+.st-icon-only.st-multi-color .st-icon-email2:after,
+.st-icon-only .st-multi-color.st-icon-email2:after,
+.st-icon-only.st-multi-color.st-icon-email2:after,
+.st-multi-color .st-icon-only.st-icon-email2:after,
+.st-icon-rounded5.st-multi-color .st-icon-email2:after,
+.st-icon-rounded5 .st-multi-color.st-icon-email2:after,
+.st-icon-rounded5.st-multi-color.st-icon-email2:after,
+.st-multi-color .st-icon-rounded5.st-icon-email2:after,
+.st-icon-r5.st-multi-color .st-icon-email2:after,
+.st-icon-r5 .st-multi-color.st-icon-email2:after,
+.st-icon-r5.st-multi-color.st-icon-email2:after,
+.st-multi-color .st-icon-r5.st-icon-email2:after {
+  text-shadow: none;
+  content: "\e049";
+  color: #c6c8ca;
+}
+
+/* line 2464, ../scss/stackicons-social-minimal/_multi-color-css-stackicons-social-minimal.scss */
+.st-icon-only.st-multi-color .st-icon-email2:hover:after,
+.st-icon-only .st-multi-color.st-icon-email2:hover:after,
+.st-icon-only.st-multi-color.st-icon-email2:hover:after,
+.st-multi-color .st-icon-only.st-icon-email2:hover:after,
+.st-icon-only.st-multi-color .st-icon-email2:focus:after,
+.st-icon-only .st-multi-color.st-icon-email2:focus:after,
+.st-icon-only.st-multi-color.st-icon-email2:focus:after,
+.st-multi-color .st-icon-only.st-icon-email2:focus:after,
+.st-icon-rounded5.st-multi-color .st-icon-email2:hover:after,
+.st-icon-rounded5 .st-multi-color.st-icon-email2:hover:after,
+.st-icon-rounded5.st-multi-color.st-icon-email2:hover:after,
+.st-multi-color .st-icon-rounded5.st-icon-email2:hover:after,
+.st-icon-rounded5.st-multi-color .st-icon-email2:focus:after,
+.st-icon-rounded5 .st-multi-color.st-icon-email2:focus:after,
+.st-icon-rounded5.st-multi-color.st-icon-email2:focus:after,
+.st-multi-color .st-icon-rounded5.st-icon-email2:focus:after,
+.st-icon-r5.st-multi-color .st-icon-email2:hover:after,
+.st-icon-r5 .st-multi-color.st-icon-email2:hover:after,
+.st-icon-r5.st-multi-color.st-icon-email2:hover:after,
+.st-multi-color .st-icon-r5.st-icon-email2:hover:after,
+.st-icon-r5.st-multi-color .st-icon-email2:focus:after,
+.st-icon-r5 .st-multi-color.st-icon-email2:focus:after,
+.st-icon-r5.st-multi-color.st-icon-email2:focus:after,
+.st-multi-color .st-icon-r5.st-icon-email2:focus:after {
+  text-shadow: 0 1px 1px #999999;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.395);
+  color: #dadbdd;
+}
+
+/* line 40, ../scss/stackicons-social-minimal/_multi-color-css-stackicons-social-minimal.scss */
+.st-multi-color .st-icon-facebook:before,
+.st-multi-color.st-icon-facebook:before {
+  text-shadow: none;
+  content: "\e002";
+  color: #3b5998;
+}
+
+/* line 579, ../scss/stackicons-social-minimal/_multi-color-css-stackicons-social-minimal.scss */
+.st-multi-color .st-icon-facebook:hover:before,
+.st-multi-color.st-icon-facebook:hover:before,
+.st-multi-color .st-icon-facebook:focus:before,
+.st-multi-color.st-icon-facebook:focus:before {
+  text-shadow: none;
+  color: #718ecb;
+}
+
+/* line 1053, ../scss/stackicons-social-minimal/_multi-color-css-stackicons-social-minimal.scss */
+.st-multi-color .st-icon-facebook:after,
+.st-multi-color.st-icon-facebook:after {
+  text-shadow: none;
+  content: "\e026";
+  color: white;
+}
+
+/* line 1603, ../scss/stackicons-social-minimal/_multi-color-css-stackicons-social-minimal.scss */
+.st-multi-color .st-icon-facebook:hover:after,
+.st-multi-color.st-icon-facebook:hover:after,
+.st-multi-color .st-icon-facebook:focus:after,
+.st-multi-color.st-icon-facebook:focus:after {
+  text-shadow: 0 1px 1px #999999;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.395);
+  color: white;
+}
+
+/* line 1777, ../scss/stackicons-social-minimal/_multi-color-css-stackicons-social-minimal.scss */
+.st-icon-only.st-multi-color .st-icon-facebook:before,
+.st-icon-only .st-multi-color.st-icon-facebook:before,
+.st-icon-only.st-multi-color.st-icon-facebook:before,
+.st-multi-color .st-icon-only.st-icon-facebook:before,
+.st-icon-rounded5.st-multi-color .st-icon-facebook:before,
+.st-icon-rounded5 .st-multi-color.st-icon-facebook:before,
+.st-icon-rounded5.st-multi-color.st-icon-facebook:before,
+.st-multi-color .st-icon-rounded5.st-icon-facebook:before,
+.st-icon-r5.st-multi-color .st-icon-facebook:before,
+.st-icon-r5 .st-multi-color.st-icon-facebook:before,
+.st-icon-r5.st-multi-color.st-icon-facebook:before,
+.st-multi-color .st-icon-r5.st-icon-facebook:before {
+  content: "" !important;
+  text-shadow: none;
+}
+
+/* line 1956, ../scss/stackicons-social-minimal/_multi-color-css-stackicons-social-minimal.scss */
+.st-icon-only.st-multi-color .st-icon-facebook:after,
+.st-icon-only .st-multi-color.st-icon-facebook:after,
+.st-icon-only.st-multi-color.st-icon-facebook:after,
+.st-multi-color .st-icon-only.st-icon-facebook:after,
+.st-icon-rounded5.st-multi-color .st-icon-facebook:after,
+.st-icon-rounded5 .st-multi-color.st-icon-facebook:after,
+.st-icon-rounded5.st-multi-color.st-icon-facebook:after,
+.st-multi-color .st-icon-rounded5.st-icon-facebook:after,
+.st-icon-r5.st-multi-color .st-icon-facebook:after,
+.st-icon-r5 .st-multi-color.st-icon-facebook:after,
+.st-icon-r5.st-multi-color.st-icon-facebook:after,
+.st-multi-color .st-icon-r5.st-icon-facebook:after {
+  text-shadow: none;
+  color: #3b5998;
+}
+
+/* line 2464, ../scss/stackicons-social-minimal/_multi-color-css-stackicons-social-minimal.scss */
+.st-icon-only.st-multi-color .st-icon-facebook:hover:after,
+.st-icon-only .st-multi-color.st-icon-facebook:hover:after,
+.st-icon-only.st-multi-color.st-icon-facebook:hover:after,
+.st-multi-color .st-icon-only.st-icon-facebook:hover:after,
+.st-icon-only.st-multi-color .st-icon-facebook:focus:after,
+.st-icon-only .st-multi-color.st-icon-facebook:focus:after,
+.st-icon-only.st-multi-color.st-icon-facebook:focus:after,
+.st-multi-color .st-icon-only.st-icon-facebook:focus:after,
+.st-icon-rounded5.st-multi-color .st-icon-facebook:hover:after,
+.st-icon-rounded5 .st-multi-color.st-icon-facebook:hover:after,
+.st-icon-rounded5.st-multi-color.st-icon-facebook:hover:after,
+.st-multi-color .st-icon-rounded5.st-icon-facebook:hover:after,
+.st-icon-rounded5.st-multi-color .st-icon-facebook:focus:after,
+.st-icon-rounded5 .st-multi-color.st-icon-facebook:focus:after,
+.st-icon-rounded5.st-multi-color.st-icon-facebook:focus:after,
+.st-multi-color .st-icon-rounded5.st-icon-facebook:focus:after,
+.st-icon-r5.st-multi-color .st-icon-facebook:hover:after,
+.st-icon-r5 .st-multi-color.st-icon-facebook:hover:after,
+.st-icon-r5.st-multi-color.st-icon-facebook:hover:after,
+.st-multi-color .st-icon-r5.st-icon-facebook:hover:after,
+.st-icon-r5.st-multi-color .st-icon-facebook:focus:after,
+.st-icon-r5 .st-multi-color.st-icon-facebook:focus:after,
+.st-icon-r5.st-multi-color.st-icon-facebook:focus:after,
+.st-multi-color .st-icon-r5.st-icon-facebook:focus:after {
+  text-shadow: 0 1px 1px #999999;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.395);
+  color: #718ecb;
+}
+
+/* line 40, ../scss/stackicons-social-minimal/_multi-color-css-stackicons-social-minimal.scss */
+.st-multi-color .st-icon-facebook-alt:before,
+.st-multi-color.st-icon-facebook-alt:before {
+  text-shadow: none;
+  content: "\e002";
+  color: #3b5998;
+}
+
+/* line 579, ../scss/stackicons-social-minimal/_multi-color-css-stackicons-social-minimal.scss */
+.st-multi-color .st-icon-facebook-alt:hover:before,
+.st-multi-color.st-icon-facebook-alt:hover:before,
+.st-multi-color .st-icon-facebook-alt:focus:before,
+.st-multi-color.st-icon-facebook-alt:focus:before {
+  text-shadow: none;
+  color: #718ecb;
+}
+
+/* line 1053, ../scss/stackicons-social-minimal/_multi-color-css-stackicons-social-minimal.scss */
+.st-multi-color .st-icon-facebook-alt:after,
+.st-multi-color.st-icon-facebook-alt:after {
+  text-shadow: none;
+  content: "\e02f";
+  color: white;
+}
+
+/* line 1603, ../scss/stackicons-social-minimal/_multi-color-css-stackicons-social-minimal.scss */
+.st-multi-color .st-icon-facebook-alt:hover:after,
+.st-multi-color.st-icon-facebook-alt:hover:after,
+.st-multi-color .st-icon-facebook-alt:focus:after,
+.st-multi-color.st-icon-facebook-alt:focus:after {
+  text-shadow: 0 1px 1px #999999;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.395);
+  color: white;
+}
+
+/* line 1777, ../scss/stackicons-social-minimal/_multi-color-css-stackicons-social-minimal.scss */
+.st-icon-only.st-multi-color .st-icon-facebook-alt:before,
+.st-icon-only .st-multi-color.st-icon-facebook-alt:before,
+.st-icon-only.st-multi-color.st-icon-facebook-alt:before,
+.st-multi-color .st-icon-only.st-icon-facebook-alt:before,
+.st-icon-rounded5.st-multi-color .st-icon-facebook-alt:before,
+.st-icon-rounded5 .st-multi-color.st-icon-facebook-alt:before,
+.st-icon-rounded5.st-multi-color.st-icon-facebook-alt:before,
+.st-multi-color .st-icon-rounded5.st-icon-facebook-alt:before,
+.st-icon-r5.st-multi-color .st-icon-facebook-alt:before,
+.st-icon-r5 .st-multi-color.st-icon-facebook-alt:before,
+.st-icon-r5.st-multi-color.st-icon-facebook-alt:before,
+.st-multi-color .st-icon-r5.st-icon-facebook-alt:before {
+  content: "" !important;
+  text-shadow: none;
+}
+
+/* line 1956, ../scss/stackicons-social-minimal/_multi-color-css-stackicons-social-minimal.scss */
+.st-icon-only.st-multi-color .st-icon-facebook-alt:after,
+.st-icon-only .st-multi-color.st-icon-facebook-alt:after,
+.st-icon-only.st-multi-color.st-icon-facebook-alt:after,
+.st-multi-color .st-icon-only.st-icon-facebook-alt:after,
+.st-icon-rounded5.st-multi-color .st-icon-facebook-alt:after,
+.st-icon-rounded5 .st-multi-color.st-icon-facebook-alt:after,
+.st-icon-rounded5.st-multi-color.st-icon-facebook-alt:after,
+.st-multi-color .st-icon-rounded5.st-icon-facebook-alt:after,
+.st-icon-r5.st-multi-color .st-icon-facebook-alt:after,
+.st-icon-r5 .st-multi-color.st-icon-facebook-alt:after,
+.st-icon-r5.st-multi-color.st-icon-facebook-alt:after,
+.st-multi-color .st-icon-r5.st-icon-facebook-alt:after {
+  text-shadow: none;
+  color: #3b5998;
+}
+
+/* line 2464, ../scss/stackicons-social-minimal/_multi-color-css-stackicons-social-minimal.scss */
+.st-icon-only.st-multi-color .st-icon-facebook-alt:hover:after,
+.st-icon-only .st-multi-color.st-icon-facebook-alt:hover:after,
+.st-icon-only.st-multi-color.st-icon-facebook-alt:hover:after,
+.st-multi-color .st-icon-only.st-icon-facebook-alt:hover:after,
+.st-icon-only.st-multi-color .st-icon-facebook-alt:focus:after,
+.st-icon-only .st-multi-color.st-icon-facebook-alt:focus:after,
+.st-icon-only.st-multi-color.st-icon-facebook-alt:focus:after,
+.st-multi-color .st-icon-only.st-icon-facebook-alt:focus:after,
+.st-icon-rounded5.st-multi-color .st-icon-facebook-alt:hover:after,
+.st-icon-rounded5 .st-multi-color.st-icon-facebook-alt:hover:after,
+.st-icon-rounded5.st-multi-color.st-icon-facebook-alt:hover:after,
+.st-multi-color .st-icon-rounded5.st-icon-facebook-alt:hover:after,
+.st-icon-rounded5.st-multi-color .st-icon-facebook-alt:focus:after,
+.st-icon-rounded5 .st-multi-color.st-icon-facebook-alt:focus:after,
+.st-icon-rounded5.st-multi-color.st-icon-facebook-alt:focus:after,
+.st-multi-color .st-icon-rounded5.st-icon-facebook-alt:focus:after,
+.st-icon-r5.st-multi-color .st-icon-facebook-alt:hover:after,
+.st-icon-r5 .st-multi-color.st-icon-facebook-alt:hover:after,
+.st-icon-r5.st-multi-color.st-icon-facebook-alt:hover:after,
+.st-multi-color .st-icon-r5.st-icon-facebook-alt:hover:after,
+.st-icon-r5.st-multi-color .st-icon-facebook-alt:focus:after,
+.st-icon-r5 .st-multi-color.st-icon-facebook-alt:focus:after,
+.st-icon-r5.st-multi-color.st-icon-facebook-alt:focus:after,
+.st-multi-color .st-icon-r5.st-icon-facebook-alt:focus:after {
+  text-shadow: 0 1px 1px #999999;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.395);
+  color: #718ecb;
+}
+
+/* line 40, ../scss/stackicons-social-minimal/_multi-color-css-stackicons-social-minimal.scss */
+.st-multi-color .st-icon-github-alt:before,
+.st-multi-color.st-icon-github-alt:before {
+  text-shadow: none;
+  content: "\e002";
+  color: #36383a;
+}
+
+/* line 579, ../scss/stackicons-social-minimal/_multi-color-css-stackicons-social-minimal.scss */
+.st-multi-color .st-icon-github-alt:hover:before,
+.st-multi-color.st-icon-github-alt:hover:before,
+.st-multi-color .st-icon-github-alt:focus:before,
+.st-multi-color.st-icon-github-alt:focus:before {
+  text-shadow: none;
+  color: #808589;
+}
+
+/* line 1053, ../scss/stackicons-social-minimal/_multi-color-css-stackicons-social-minimal.scss */
+.st-multi-color .st-icon-github-alt:after,
+.st-multi-color.st-icon-github-alt:after {
+  text-shadow: none;
+  content: "\e186";
+  color: white;
+}
+
+/* line 1603, ../scss/stackicons-social-minimal/_multi-color-css-stackicons-social-minimal.scss */
+.st-multi-color .st-icon-github-alt:hover:after,
+.st-multi-color.st-icon-github-alt:hover:after,
+.st-multi-color .st-icon-github-alt:focus:after,
+.st-multi-color.st-icon-github-alt:focus:after {
+  text-shadow: 0 1px 1px #999999;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.395);
+  color: white;
+}
+
+/* line 1777, ../scss/stackicons-social-minimal/_multi-color-css-stackicons-social-minimal.scss */
+.st-icon-only.st-multi-color .st-icon-github-alt:before,
+.st-icon-only .st-multi-color.st-icon-github-alt:before,
+.st-icon-only.st-multi-color.st-icon-github-alt:before,
+.st-multi-color .st-icon-only.st-icon-github-alt:before,
+.st-icon-rounded5.st-multi-color .st-icon-github-alt:before,
+.st-icon-rounded5 .st-multi-color.st-icon-github-alt:before,
+.st-icon-rounded5.st-multi-color.st-icon-github-alt:before,
+.st-multi-color .st-icon-rounded5.st-icon-github-alt:before,
+.st-icon-r5.st-multi-color .st-icon-github-alt:before,
+.st-icon-r5 .st-multi-color.st-icon-github-alt:before,
+.st-icon-r5.st-multi-color.st-icon-github-alt:before,
+.st-multi-color .st-icon-r5.st-icon-github-alt:before {
+  content: "" !important;
+  text-shadow: none;
+}
+
+/* line 1956, ../scss/stackicons-social-minimal/_multi-color-css-stackicons-social-minimal.scss */
+.st-icon-only.st-multi-color .st-icon-github-alt:after,
+.st-icon-only .st-multi-color.st-icon-github-alt:after,
+.st-icon-only.st-multi-color.st-icon-github-alt:after,
+.st-multi-color .st-icon-only.st-icon-github-alt:after,
+.st-icon-rounded5.st-multi-color .st-icon-github-alt:after,
+.st-icon-rounded5 .st-multi-color.st-icon-github-alt:after,
+.st-icon-rounded5.st-multi-color.st-icon-github-alt:after,
+.st-multi-color .st-icon-rounded5.st-icon-github-alt:after,
+.st-icon-r5.st-multi-color .st-icon-github-alt:after,
+.st-icon-r5 .st-multi-color.st-icon-github-alt:after,
+.st-icon-r5.st-multi-color.st-icon-github-alt:after,
+.st-multi-color .st-icon-r5.st-icon-github-alt:after {
+  text-shadow: none;
+  color: #36383a;
+}
+
+/* line 2464, ../scss/stackicons-social-minimal/_multi-color-css-stackicons-social-minimal.scss */
+.st-icon-only.st-multi-color .st-icon-github-alt:hover:after,
+.st-icon-only .st-multi-color.st-icon-github-alt:hover:after,
+.st-icon-only.st-multi-color.st-icon-github-alt:hover:after,
+.st-multi-color .st-icon-only.st-icon-github-alt:hover:after,
+.st-icon-only.st-multi-color .st-icon-github-alt:focus:after,
+.st-icon-only .st-multi-color.st-icon-github-alt:focus:after,
+.st-icon-only.st-multi-color.st-icon-github-alt:focus:after,
+.st-multi-color .st-icon-only.st-icon-github-alt:focus:after,
+.st-icon-rounded5.st-multi-color .st-icon-github-alt:hover:after,
+.st-icon-rounded5 .st-multi-color.st-icon-github-alt:hover:after,
+.st-icon-rounded5.st-multi-color.st-icon-github-alt:hover:after,
+.st-multi-color .st-icon-rounded5.st-icon-github-alt:hover:after,
+.st-icon-rounded5.st-multi-color .st-icon-github-alt:focus:after,
+.st-icon-rounded5 .st-multi-color.st-icon-github-alt:focus:after,
+.st-icon-rounded5.st-multi-color.st-icon-github-alt:focus:after,
+.st-multi-color .st-icon-rounded5.st-icon-github-alt:focus:after,
+.st-icon-r5.st-multi-color .st-icon-github-alt:hover:after,
+.st-icon-r5 .st-multi-color.st-icon-github-alt:hover:after,
+.st-icon-r5.st-multi-color.st-icon-github-alt:hover:after,
+.st-multi-color .st-icon-r5.st-icon-github-alt:hover:after,
+.st-icon-r5.st-multi-color .st-icon-github-alt:focus:after,
+.st-icon-r5 .st-multi-color.st-icon-github-alt:focus:after,
+.st-icon-r5.st-multi-color.st-icon-github-alt:focus:after,
+.st-multi-color .st-icon-r5.st-icon-github-alt:focus:after {
+  text-shadow: 0 1px 1px #999999;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.395);
+  color: #808589;
+}
+
+/* line 40, ../scss/stackicons-social-minimal/_multi-color-css-stackicons-social-minimal.scss */
+.st-multi-color .st-icon-googleplus:before,
+.st-multi-color.st-icon-googleplus:before {
+  text-shadow: none;
+  content: "\e002";
+  color: #f2301c;
+}
+
+/* line 579, ../scss/stackicons-social-minimal/_multi-color-css-stackicons-social-minimal.scss */
+.st-multi-color .st-icon-googleplus:hover:before,
+.st-multi-color.st-icon-googleplus:hover:before,
+.st-multi-color .st-icon-googleplus:focus:before,
+.st-multi-color.st-icon-googleplus:focus:before {
+  text-shadow: none;
+  color: #f7786b;
+}
+
+/* line 1053, ../scss/stackicons-social-minimal/_multi-color-css-stackicons-social-minimal.scss */
+.st-multi-color .st-icon-googleplus:after,
+.st-multi-color.st-icon-googleplus:after {
+  text-shadow: none;
+  content: "\e03f";
+  color: white;
+}
+
+/* line 1603, ../scss/stackicons-social-minimal/_multi-color-css-stackicons-social-minimal.scss */
+.st-multi-color .st-icon-googleplus:hover:after,
+.st-multi-color.st-icon-googleplus:hover:after,
+.st-multi-color .st-icon-googleplus:focus:after,
+.st-multi-color.st-icon-googleplus:focus:after {
+  text-shadow: 0 1px 1px #999999;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.395);
+  color: white;
+}
+
+/* line 1777, ../scss/stackicons-social-minimal/_multi-color-css-stackicons-social-minimal.scss */
+.st-icon-only.st-multi-color .st-icon-googleplus:before,
+.st-icon-only .st-multi-color.st-icon-googleplus:before,
+.st-icon-only.st-multi-color.st-icon-googleplus:before,
+.st-multi-color .st-icon-only.st-icon-googleplus:before,
+.st-icon-rounded5.st-multi-color .st-icon-googleplus:before,
+.st-icon-rounded5 .st-multi-color.st-icon-googleplus:before,
+.st-icon-rounded5.st-multi-color.st-icon-googleplus:before,
+.st-multi-color .st-icon-rounded5.st-icon-googleplus:before,
+.st-icon-r5.st-multi-color .st-icon-googleplus:before,
+.st-icon-r5 .st-multi-color.st-icon-googleplus:before,
+.st-icon-r5.st-multi-color.st-icon-googleplus:before,
+.st-multi-color .st-icon-r5.st-icon-googleplus:before {
+  content: "" !important;
+  text-shadow: none;
+}
+
+/* line 1956, ../scss/stackicons-social-minimal/_multi-color-css-stackicons-social-minimal.scss */
+.st-icon-only.st-multi-color .st-icon-googleplus:after,
+.st-icon-only .st-multi-color.st-icon-googleplus:after,
+.st-icon-only.st-multi-color.st-icon-googleplus:after,
+.st-multi-color .st-icon-only.st-icon-googleplus:after,
+.st-icon-rounded5.st-multi-color .st-icon-googleplus:after,
+.st-icon-rounded5 .st-multi-color.st-icon-googleplus:after,
+.st-icon-rounded5.st-multi-color.st-icon-googleplus:after,
+.st-multi-color .st-icon-rounded5.st-icon-googleplus:after,
+.st-icon-r5.st-multi-color .st-icon-googleplus:after,
+.st-icon-r5 .st-multi-color.st-icon-googleplus:after,
+.st-icon-r5.st-multi-color.st-icon-googleplus:after,
+.st-multi-color .st-icon-r5.st-icon-googleplus:after {
+  text-shadow: none;
+  color: #f2301c;
+}
+
+/* line 2464, ../scss/stackicons-social-minimal/_multi-color-css-stackicons-social-minimal.scss */
+.st-icon-only.st-multi-color .st-icon-googleplus:hover:after,
+.st-icon-only .st-multi-color.st-icon-googleplus:hover:after,
+.st-icon-only.st-multi-color.st-icon-googleplus:hover:after,
+.st-multi-color .st-icon-only.st-icon-googleplus:hover:after,
+.st-icon-only.st-multi-color .st-icon-googleplus:focus:after,
+.st-icon-only .st-multi-color.st-icon-googleplus:focus:after,
+.st-icon-only.st-multi-color.st-icon-googleplus:focus:after,
+.st-multi-color .st-icon-only.st-icon-googleplus:focus:after,
+.st-icon-rounded5.st-multi-color .st-icon-googleplus:hover:after,
+.st-icon-rounded5 .st-multi-color.st-icon-googleplus:hover:after,
+.st-icon-rounded5.st-multi-color.st-icon-googleplus:hover:after,
+.st-multi-color .st-icon-rounded5.st-icon-googleplus:hover:after,
+.st-icon-rounded5.st-multi-color .st-icon-googleplus:focus:after,
+.st-icon-rounded5 .st-multi-color.st-icon-googleplus:focus:after,
+.st-icon-rounded5.st-multi-color.st-icon-googleplus:focus:after,
+.st-multi-color .st-icon-rounded5.st-icon-googleplus:focus:after,
+.st-icon-r5.st-multi-color .st-icon-googleplus:hover:after,
+.st-icon-r5 .st-multi-color.st-icon-googleplus:hover:after,
+.st-icon-r5.st-multi-color.st-icon-googleplus:hover:after,
+.st-multi-color .st-icon-r5.st-icon-googleplus:hover:after,
+.st-icon-r5.st-multi-color .st-icon-googleplus:focus:after,
+.st-icon-r5 .st-multi-color.st-icon-googleplus:focus:after,
+.st-icon-r5.st-multi-color.st-icon-googleplus:focus:after,
+.st-multi-color .st-icon-r5.st-icon-googleplus:focus:after {
+  text-shadow: 0 1px 1px #999999;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.395);
+  color: #f7786b;
+}
+
+/* line 40, ../scss/stackicons-social-minimal/_multi-color-css-stackicons-social-minimal.scss */
+.st-multi-color .st-icon-linkedin:before,
+.st-multi-color.st-icon-linkedin:before {
+  text-shadow: none;
+  content: "\e002";
+  color: #107eb8;
+}
+
+/* line 579, ../scss/stackicons-social-minimal/_multi-color-css-stackicons-social-minimal.scss */
+.st-multi-color .st-icon-linkedin:hover:before,
+.st-multi-color.st-icon-linkedin:hover:before,
+.st-multi-color .st-icon-linkedin:focus:before,
+.st-multi-color.st-icon-linkedin:focus:before {
+  text-shadow: none;
+  color: #45b5f0;
+}
+
+/* line 1053, ../scss/stackicons-social-minimal/_multi-color-css-stackicons-social-minimal.scss */
+.st-multi-color .st-icon-linkedin:after,
+.st-multi-color.st-icon-linkedin:after {
+  text-shadow: none;
+  content: "\e25f";
+  color: white;
+}
+
+/* line 1603, ../scss/stackicons-social-minimal/_multi-color-css-stackicons-social-minimal.scss */
+.st-multi-color .st-icon-linkedin:hover:after,
+.st-multi-color.st-icon-linkedin:hover:after,
+.st-multi-color .st-icon-linkedin:focus:after,
+.st-multi-color.st-icon-linkedin:focus:after {
+  text-shadow: 0 1px 1px #999999;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.395);
+  color: white;
+}
+
+/* line 1777, ../scss/stackicons-social-minimal/_multi-color-css-stackicons-social-minimal.scss */
+.st-icon-only.st-multi-color .st-icon-linkedin:before,
+.st-icon-only .st-multi-color.st-icon-linkedin:before,
+.st-icon-only.st-multi-color.st-icon-linkedin:before,
+.st-multi-color .st-icon-only.st-icon-linkedin:before,
+.st-icon-rounded5.st-multi-color .st-icon-linkedin:before,
+.st-icon-rounded5 .st-multi-color.st-icon-linkedin:before,
+.st-icon-rounded5.st-multi-color.st-icon-linkedin:before,
+.st-multi-color .st-icon-rounded5.st-icon-linkedin:before,
+.st-icon-r5.st-multi-color .st-icon-linkedin:before,
+.st-icon-r5 .st-multi-color.st-icon-linkedin:before,
+.st-icon-r5.st-multi-color.st-icon-linkedin:before,
+.st-multi-color .st-icon-r5.st-icon-linkedin:before {
+  content: "" !important;
+  text-shadow: none;
+}
+
+/* line 1956, ../scss/stackicons-social-minimal/_multi-color-css-stackicons-social-minimal.scss */
+.st-icon-only.st-multi-color .st-icon-linkedin:after,
+.st-icon-only .st-multi-color.st-icon-linkedin:after,
+.st-icon-only.st-multi-color.st-icon-linkedin:after,
+.st-multi-color .st-icon-only.st-icon-linkedin:after,
+.st-icon-rounded5.st-multi-color .st-icon-linkedin:after,
+.st-icon-rounded5 .st-multi-color.st-icon-linkedin:after,
+.st-icon-rounded5.st-multi-color.st-icon-linkedin:after,
+.st-multi-color .st-icon-rounded5.st-icon-linkedin:after,
+.st-icon-r5.st-multi-color .st-icon-linkedin:after,
+.st-icon-r5 .st-multi-color.st-icon-linkedin:after,
+.st-icon-r5.st-multi-color.st-icon-linkedin:after,
+.st-multi-color .st-icon-r5.st-icon-linkedin:after {
+  text-shadow: none;
+  color: #107eb8;
+}
+
+/* line 2464, ../scss/stackicons-social-minimal/_multi-color-css-stackicons-social-minimal.scss */
+.st-icon-only.st-multi-color .st-icon-linkedin:hover:after,
+.st-icon-only .st-multi-color.st-icon-linkedin:hover:after,
+.st-icon-only.st-multi-color.st-icon-linkedin:hover:after,
+.st-multi-color .st-icon-only.st-icon-linkedin:hover:after,
+.st-icon-only.st-multi-color .st-icon-linkedin:focus:after,
+.st-icon-only .st-multi-color.st-icon-linkedin:focus:after,
+.st-icon-only.st-multi-color.st-icon-linkedin:focus:after,
+.st-multi-color .st-icon-only.st-icon-linkedin:focus:after,
+.st-icon-rounded5.st-multi-color .st-icon-linkedin:hover:after,
+.st-icon-rounded5 .st-multi-color.st-icon-linkedin:hover:after,
+.st-icon-rounded5.st-multi-color.st-icon-linkedin:hover:after,
+.st-multi-color .st-icon-rounded5.st-icon-linkedin:hover:after,
+.st-icon-rounded5.st-multi-color .st-icon-linkedin:focus:after,
+.st-icon-rounded5 .st-multi-color.st-icon-linkedin:focus:after,
+.st-icon-rounded5.st-multi-color.st-icon-linkedin:focus:after,
+.st-multi-color .st-icon-rounded5.st-icon-linkedin:focus:after,
+.st-icon-r5.st-multi-color .st-icon-linkedin:hover:after,
+.st-icon-r5 .st-multi-color.st-icon-linkedin:hover:after,
+.st-icon-r5.st-multi-color.st-icon-linkedin:hover:after,
+.st-multi-color .st-icon-r5.st-icon-linkedin:hover:after,
+.st-icon-r5.st-multi-color .st-icon-linkedin:focus:after,
+.st-icon-r5 .st-multi-color.st-icon-linkedin:focus:after,
+.st-icon-r5.st-multi-color.st-icon-linkedin:focus:after,
+.st-multi-color .st-icon-r5.st-icon-linkedin:focus:after {
+  text-shadow: 0 1px 1px #999999;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.395);
+  color: #45b5f0;
+}
+
+/* line 40, ../scss/stackicons-social-minimal/_multi-color-css-stackicons-social-minimal.scss */
+.st-multi-color .st-icon-twitter:before,
+.st-multi-color.st-icon-twitter:before {
+  text-shadow: none;
+  content: "\e002";
+  color: #00bcf6;
+}
+
+/* line 579, ../scss/stackicons-social-minimal/_multi-color-css-stackicons-social-minimal.scss */
+.st-multi-color .st-icon-twitter:hover:before,
+.st-multi-color.st-icon-twitter:hover:before,
+.st-multi-color .st-icon-twitter:focus:before,
+.st-multi-color.st-icon-twitter:focus:before {
+  text-shadow: none;
+  color: #53d7ff;
+}
+
+/* line 1053, ../scss/stackicons-social-minimal/_multi-color-css-stackicons-social-minimal.scss */
+.st-multi-color .st-icon-twitter:after,
+.st-multi-color.st-icon-twitter:after {
+  text-shadow: none;
+  content: "\e036";
+  color: white;
+}
+
+/* line 1603, ../scss/stackicons-social-minimal/_multi-color-css-stackicons-social-minimal.scss */
+.st-multi-color .st-icon-twitter:hover:after,
+.st-multi-color.st-icon-twitter:hover:after,
+.st-multi-color .st-icon-twitter:focus:after,
+.st-multi-color.st-icon-twitter:focus:after {
+  text-shadow: 0 1px 1px #999999;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.395);
+  color: white;
+}
+
+/* line 1777, ../scss/stackicons-social-minimal/_multi-color-css-stackicons-social-minimal.scss */
+.st-icon-only.st-multi-color .st-icon-twitter:before,
+.st-icon-only .st-multi-color.st-icon-twitter:before,
+.st-icon-only.st-multi-color.st-icon-twitter:before,
+.st-multi-color .st-icon-only.st-icon-twitter:before,
+.st-icon-rounded5.st-multi-color .st-icon-twitter:before,
+.st-icon-rounded5 .st-multi-color.st-icon-twitter:before,
+.st-icon-rounded5.st-multi-color.st-icon-twitter:before,
+.st-multi-color .st-icon-rounded5.st-icon-twitter:before,
+.st-icon-r5.st-multi-color .st-icon-twitter:before,
+.st-icon-r5 .st-multi-color.st-icon-twitter:before,
+.st-icon-r5.st-multi-color.st-icon-twitter:before,
+.st-multi-color .st-icon-r5.st-icon-twitter:before {
+  content: "" !important;
+  text-shadow: none;
+}
+
+/* line 1956, ../scss/stackicons-social-minimal/_multi-color-css-stackicons-social-minimal.scss */
+.st-icon-only.st-multi-color .st-icon-twitter:after,
+.st-icon-only .st-multi-color.st-icon-twitter:after,
+.st-icon-only.st-multi-color.st-icon-twitter:after,
+.st-multi-color .st-icon-only.st-icon-twitter:after,
+.st-icon-rounded5.st-multi-color .st-icon-twitter:after,
+.st-icon-rounded5 .st-multi-color.st-icon-twitter:after,
+.st-icon-rounded5.st-multi-color.st-icon-twitter:after,
+.st-multi-color .st-icon-rounded5.st-icon-twitter:after,
+.st-icon-r5.st-multi-color .st-icon-twitter:after,
+.st-icon-r5 .st-multi-color.st-icon-twitter:after,
+.st-icon-r5.st-multi-color.st-icon-twitter:after,
+.st-multi-color .st-icon-r5.st-icon-twitter:after {
+  text-shadow: none;
+  color: #00bcf6;
+}
+
+/* line 2464, ../scss/stackicons-social-minimal/_multi-color-css-stackicons-social-minimal.scss */
+.st-icon-only.st-multi-color .st-icon-twitter:hover:after,
+.st-icon-only .st-multi-color.st-icon-twitter:hover:after,
+.st-icon-only.st-multi-color.st-icon-twitter:hover:after,
+.st-multi-color .st-icon-only.st-icon-twitter:hover:after,
+.st-icon-only.st-multi-color .st-icon-twitter:focus:after,
+.st-icon-only .st-multi-color.st-icon-twitter:focus:after,
+.st-icon-only.st-multi-color.st-icon-twitter:focus:after,
+.st-multi-color .st-icon-only.st-icon-twitter:focus:after,
+.st-icon-rounded5.st-multi-color .st-icon-twitter:hover:after,
+.st-icon-rounded5 .st-multi-color.st-icon-twitter:hover:after,
+.st-icon-rounded5.st-multi-color.st-icon-twitter:hover:after,
+.st-multi-color .st-icon-rounded5.st-icon-twitter:hover:after,
+.st-icon-rounded5.st-multi-color .st-icon-twitter:focus:after,
+.st-icon-rounded5 .st-multi-color.st-icon-twitter:focus:after,
+.st-icon-rounded5.st-multi-color.st-icon-twitter:focus:after,
+.st-multi-color .st-icon-rounded5.st-icon-twitter:focus:after,
+.st-icon-r5.st-multi-color .st-icon-twitter:hover:after,
+.st-icon-r5 .st-multi-color.st-icon-twitter:hover:after,
+.st-icon-r5.st-multi-color.st-icon-twitter:hover:after,
+.st-multi-color .st-icon-r5.st-icon-twitter:hover:after,
+.st-icon-r5.st-multi-color .st-icon-twitter:focus:after,
+.st-icon-r5 .st-multi-color.st-icon-twitter:focus:after,
+.st-icon-r5.st-multi-color.st-icon-twitter:focus:after,
+.st-multi-color .st-icon-r5.st-icon-twitter:focus:after {
+  text-shadow: 0 1px 1px #999999;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.395);
+  color: #53d7ff;
+}
