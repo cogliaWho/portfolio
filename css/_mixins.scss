@@ -63,3 +63,38 @@
 }
 /* END MIXINS */
 
+/* LAYOUT MIXINS */
+@mixin box-sizing($box-model) {
+  -webkit-box-sizing: $box-model; // Safari <= 5
+     -moz-box-sizing: $box-model; // Firefox <= 19
+          box-sizing: $box-model;
+}
+
+/* flex style */
+
+ @mixin flexbox() {
+  display: -webkit-box;         /* OLD - iOS 6-, Safari 3.1-6 */            
+  display: -moz-box;            /* OLD - Firefox 19- (buggy but mostly works) */    
+  display: -ms-flexbox;         /* TWEENER - IE 10 */
+  display: -webkit-flex;        /* NEW - Chrome */
+  display: flex;                /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+
+@mixin flex($values) {
+  -webkit-box-flex: $values;
+  -moz-box-flex:  $values;
+  -webkit-flex:  $values;
+  -ms-flex:  $values;
+  flex:  $values;
+}
+
+@mixin order($val) {
+  -webkit-box-ordinal-group: $val;  
+  -moz-box-ordinal-group: $val;     
+  -ms-flex-order: $val;     
+  -webkit-order: $val;  
+  order: $val;
+}
+
+/* END LAYOUT MIXINS */
+

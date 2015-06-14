@@ -1,0 +1,9 @@
+footer{
+	height: 30px;
+	background-color: white;
+	border-top: 2px solid deeppink;
+}
+
+footer [class*='col-']{
+	height: 100%;
+}

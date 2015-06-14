@@ -1,0 +1,25 @@
+.container-bio{
+	height: 100%;	
+}
+
+.container-bio [class*='col-']{
+	height: 100%;
+}
+
+.bio-description{
+	overflow: hidden; 
+	p{
+		font-size: 120%;
+		padding: 20px;
+		line-height: 130%;
+	}
+}
+
+.bio-img{
+	overflow: hidden;
+	
+	img{
+		width: 100%;
+		height: auto;
+	}
+}
