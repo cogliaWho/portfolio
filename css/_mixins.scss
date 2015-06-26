@@ -7,6 +7,14 @@
     transition: $attribute $speed $easing;
 }
 
+@mixin animation ($attribute: all, $speed: 200, $easing: ease){
+    -webkit-transition: $attribute $speed $easing;
+    -moz-transition: $attribute $speed $easing;
+    -ms-transition: $attribute $speed $easing;
+    -o-transition: $attribute $speed $easing;
+    transition: $attribute $speed $easing;
+}
+
 @mixin abs-pos ($top: auto, $right: auto, $bottom: auto, $left: auto) {
     top: $top;
     right: $right;

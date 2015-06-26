@@ -29,7 +29,7 @@
 				<!--logo header-->
 				<div class="col-1-8 header-logo">
 					<a href="">
-						<img src="">
+						<img src="resources/images/logo.png">
 					</a>
 				</div>
 				<!--end logo header-->
@@ -37,23 +37,41 @@
 				<div class="col-1-2 social">
 					<div class="social-label"><p>find me here:</p></div>
 					<div class="social-icon-wrapper">
-						<a href="" class="social-icon linkedin-icon"></a>
-						<a href="" class="social-icon infoJob-icon"></a>
-						<a href="" class="social-icon twitter-icon"></a>
-						<a href="" class="social-icon googlePlus-icon"></a>
+						<a href="https://www.linkedin.com/pub/lorenzo-cogliati/46/723/449" class="social-icon linkedin-icon">
+							<img src="resources/images/linkedin-active.png">	
+						</a>
+						<a href="" class="social-icon infoJob-icon">
+							<img src="resources/images/linkedin-active.png">
+						</a>
+						<a href="https://twitter.com/CogliaWho" class="social-icon twitter-icon">
+							<img src="resources/images/twitter-active.png">
+						</a>
+						<a href="https://www.google.com/+LorenzoCogliati" class="social-icon googlePlus-icon">
+							<img src="resources/images/linkedin-active.png">
+						</a>
 					</div>
 				</div>
 				<!--end social icons-->
 				<!--old portfolios menu-->
-				<div class="col-1-4 portfolio-ddl">
+				<div id="portfolio-ddl-button" class="col-1-4 portfolio-ddl" onclick="toggleDDL();" data-isOpen="false">
 					<div class="portfolio-ddl-label">switch portfolio</div>
-					<div id="portfolio-ddl-icon" class="portfolio-ddl-icon close">+</div>
+					<div id="portfolio-ddl-icon" class="portfolio-ddl-icon">
+						<div id="portfolio-ddl-vert-bar" class="ddl-icon-bar vertical-bar"></div>
+						<div id="portfolio-ddl-horiz-bar" class="ddl-icon-bar horizontal-bar"></div>
+					</div>
+					<div id="portfolio-ddl-list" class="portfolio-ddl-list">
+						<!--<div class="portfolio-ddl-item left-all">
+							<div class="portfolio-ddl-title"><p>Portfolio test yeah!<span> 2015</span></p></div>
+							<div class="portfolio-ddl-tech-wrap"><div>1</div><div>2</div></div>
+							<div class="ddl-Arrow-Item">></div>
+						</div>-->
+					</div>
 				</div>
 				<!--end old portfolios menu-->
 				<!--blog button-->
 				<div class="col-1-8 blog-btn">
 					<a href="">
-						<img src="">
+						<img src="resources/images/logo2.png">
 					</a>
 				</div>
 				<!--end blog button-->
@@ -123,5 +141,68 @@
 <script type="text/javascript" src="javascript/main.js"></script>
 <!-- end imported javascript -->
 <script type="text/javascript">
-	
+
+	var ddlVertBar = $("#portfolio-ddl-vert-bar");
+	var ddlHorizBar = $("#portfolio-ddl-horiz-bar");
+	var isFilled = false;
+	var animDDLdelay = 300;
+
+	var debugList = [{title:"nome1", data:"data1", techs:["id1","id2","id3","id4"], url: "urltest1"}, {title:"nome2", data:"data2", techs:["id1","id2","id3"], url: "urltest2"}, {title:"nome3", data:"data3", techs:["id1","id2"], url: "urltest3"}, {title:"nome4", data:"data4", techs:["id1"], url: "urltest4"}, {title:"nome5", data:"data5", techs:["id1","id2"], url: "urltest5"}, {title:"nome6", data:"data6", techs:["id1","id2","id3","id4"], url: "urltest6"}];
+
+	var toggleDDL = function toggleDDL() {
+		var isOpen = ($("#portfolio-ddl-button").attr("data-isOpen") === 'true');
+		$("#portfolio-ddl-button").attr("data-isOpen", !isOpen);
+
+		animDDLIcon(isOpen);
+		fillDDLList(isOpen);
+	}
+
+	var animDDLIcon = function animDDLIcon(isOpen){
+		if(isOpen){
+			ddlVertBar.removeClass('anim-ddl-icon-open-vert').addClass('anim-ddl-icon-close-vert');
+			ddlHorizBar.removeClass('anim-ddl-icon-open-horiz').addClass('anim-ddl-icon-close-horiz');
+			setTimeout(function(){
+				$("#portfolio-ddl-list").css("display", "none");
+			}, animDDLdelay);
+		} else {
+			ddlVertBar.removeClass('anim-ddl-icon-close-vert').addClass('anim-ddl-icon-open-vert');
+			ddlHorizBar.removeClass('anim-ddl-icon-close-horiz').addClass('anim-ddl-icon-open-horiz');
+			$("#portfolio-ddl-list").css("display", "block");
+		}			
+	};
+
+	var fillDDLList = function animDDLIcon(isOpen){
+		if(!isFilled){
+			for (var i = 0; i < debugList.length; i++)
+			{
+
+				if(i % 2 == 0)
+					$("#portfolio-ddl-list").append('<div class="portfolio-ddl-item left-all"></div>');				
+				else
+					$("#portfolio-ddl-list").append('<div class="portfolio-ddl-item right-all"></div>');				
+			}
+
+			isFilled = true;
+		} 
+
+		animDDLList(isOpen);	
+	};
+
+	var animDDLList = function animDDLIcon(isOpen){
+		if(isOpen){
+			jQuery.each($(".portfolio-ddl-item"), function(i, val){
+				if(i % 2 == 0)
+					$(val).removeClass('anim-ddl-open-left').addClass('anim-ddl-close-left');		
+				else
+					$(val).removeClass('anim-ddl-open-right').addClass('anim-ddl-close-right');
+			});
+		} else {
+			$(".portfolio-ddl-item").each(function(i, val){
+				if(i % 2 == 0)
+					$(val).removeClass('anim-ddl-close-left').addClass('anim-ddl-open-left');		
+				else
+					$(val).removeClass('anim-ddl-close-right').addClass('anim-ddl-open-right');
+			});
+		}	
+	};
 </script>
