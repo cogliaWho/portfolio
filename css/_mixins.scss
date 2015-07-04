@@ -1,5 +1,5 @@
 /* MIXINS */
-@mixin transition ($attribute: all, $speed: 200, $easing: ease){
+@mixin transition ($attribute: all, $speed: 500ms, $easing: ease){
     -webkit-transition: $attribute $speed $easing;
     -moz-transition: $attribute $speed $easing;
     -ms-transition: $attribute $speed $easing;
@@ -7,7 +7,7 @@
     transition: $attribute $speed $easing;
 }
 
-@mixin animation ($attribute: all, $speed: 200, $easing: ease){
+@mixin transitionLight ($attribute: all, $speed: 500ms, $easing: ease){
     -webkit-transition: $attribute $speed $easing;
     -moz-transition: $attribute $speed $easing;
     -ms-transition: $attribute $speed $easing;

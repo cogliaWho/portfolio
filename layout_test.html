@@ -21,20 +21,27 @@
 		<!-- end imported style -->
 
 	</head>
-	<body onload="loaded()">
+	<body onload="loaded()" class="lightOn">
 		
 		<div id="main" class="main">
 			<!--header element with in order left from right: social icons, menu for old portfolios, blog button-->
 			<header id="header" class="header row">
-				<!--logo header-->
-				<div class="col-1-8 header-logo">
-					<a href="">
-						<img src="resources/images/logo.png">
-					</a>
+				<!--old portfolios menu-->
+				<div id="portfolio-ddl-button" class="col-1-4 portfolio-ddl" onclick="toggleDDL();" data-isOpen="false">
+					<div class="portfolio-ddl-label">switch portfolio</div>
+					<div id="portfolio-ddl-icon" class="portfolio-ddl-icon">
+						<div id="portfolio-ddl-vert-bar" class="ddl-icon-bar vertical-bar"></div>
+						<div id="portfolio-ddl-horiz-bar" class="ddl-icon-bar horizontal-bar"></div>
+					</div>
+					<div id="portfolio-ddl-list" class="portfolio-ddl-list">
+
+					</div>
 				</div>
-				<!--end logo header-->
-				<!--social icons-->
-				<div class="col-1-2 social">
+				<!--end old portfolios menu-->
+				<div class="col-1-2">
+				</div>
+				<!--social icons
+				<div class="col-1-3 social">
 					<div class="social-label"><p>find me here:</p></div>
 					<div class="social-icon-wrapper">
 						<a href="https://www.linkedin.com/pub/lorenzo-cogliati/46/723/449" class="social-icon linkedin-icon">
@@ -51,41 +58,50 @@
 						</a>
 					</div>
 				</div>
-				<!--end social icons-->
-				<!--old portfolios menu-->
-				<div id="portfolio-ddl-button" class="col-1-4 portfolio-ddl" onclick="toggleDDL();" data-isOpen="false">
-					<div class="portfolio-ddl-label">switch portfolio</div>
-					<div id="portfolio-ddl-icon" class="portfolio-ddl-icon">
-						<div id="portfolio-ddl-vert-bar" class="ddl-icon-bar vertical-bar"></div>
-						<div id="portfolio-ddl-horiz-bar" class="ddl-icon-bar horizontal-bar"></div>
-					</div>
-					<div id="portfolio-ddl-list" class="portfolio-ddl-list">
-						<!--<div class="portfolio-ddl-item left-all">
-							<div class="portfolio-ddl-title"><p>Portfolio test yeah!<span> 2015</span></p></div>
-							<div class="portfolio-ddl-tech-wrap"><div>1</div><div>2</div></div>
-							<div class="ddl-Arrow-Item">></div>
-						</div>-->
-					</div>
-				</div>
-				<!--end old portfolios menu-->
-				<!--blog button-->
+				end social icons-->
+				<!--blog button
 				<div class="col-1-8 blog-btn">
 					<a href="">
 						<img src="resources/images/logo2.png">
 					</a>
 				</div>
-				<!--end blog button-->
+				end blog button-->
+				<!--switch light header-->
+				<div class="col-1-8 header-switch" onclick="toggleLight();">
+					<p>turn <span id="switchLabel">off</span> the light</p>
+				</div>
+				<!--end switch light-->
+				<!--language selector-->
+				<div class="col-1-8 language-selector">
+					<div class="language-flag">ita</div>
+					<div class="language-flag">eng</div>
+				</div>
+				<!--end language selector-->
 			</header>
 			<!--end header-->
 			<!--biography container-->
-			<section id="container-bio" class="container-bio row row-pad">
-				<!--logo and/or avatar-->
-				<div class="col-1-2 bio-description">
+			<section id="container-bio" class="container-bio row ">
+				<!--logo banner and/or avatar-->
+				<div class="bio-img">
+					
+				</div>
+				<!--end logo/avatar-->
+				<!--biography-->
+				<article class="bio-description row-pad">
 					<p>
-						I'm currently working for Avanade, a cunsultant group partner of Microsoft. My goal is to 
-						</br></br>
+						Hello! I'm Lorenzo and I'm currently working for Avanade, a cunsultant group partner of Microsoft.... 
+						</br>
 						In the last years I worked on mobile games for DeNA Vancouver. Started as a front end developer for web-based games I moved to work on a puzzle/RPG game developed with Unity3D (C#). I really like to focus on UI and UX. 
-						</br></br>
+					</p>
+					<p>
+						Hello! I'm Lorenzo and I'm currently working for Avanade, a cunsultant group partner of Microsoft.... 
+						In the last years I worked on mobile games for DeNA Vancouver. Started as a front end developer for web-based games I moved to work on a puzzle/RPG game developed with Unity3D (C#). I really like to focus on UI and UX. 
+					</p>
+					<p>
+						Hello! I'm Lorenzo and I'm currently working for Avanade, a cunsultant group partner of Microsoft.... 
+						In the last years I worked on mobile games for DeNA Vancouver. Started as a front end developer for web-based games I moved to work on a puzzle/RPG game developed with Unity3D (C#). I really like to focus on UI and UX. 
+					</p>
+						<!--</br></br>
 						Before this experience in Canada I was working in Italy on web based mobile's applications (mostly for iPad) for the pharmaceutical industries. Also I developed custom modules for the CMS DotNetNuke (ASP.net) and building an e-learning platform for doctors.
 						</br></br>
 						I like to do different things, learn new stuff, to improve my knowledge. 
@@ -99,13 +115,8 @@
 						In my spare time i like to hike with my girlfriend, play basketball, watch movies, play video games and listen a lot of music. I'm also a bicycle mechanic, you never know..
 						</br></br>
 						For a complete list of my experiences check out my <a href="https://www.linkedin.com/pub/lorenzo-cogliati/46/723/449">Linkedin profile</a> or <a href="mailto:lorenzo.cogliati@gmail.com?subject=hello there, lets collaborate!">contact me</a> if you want to work with me or if you want more informations!
-					</p>
-				</div>
-				<!--end logo/avatar-->
-				<!--biography-->
-				<div class="col-1-2 bio-img">
-					<img src="resources/images/me.jpg">
-				</div>
+					</p>-->
+				</article>
 				<!--end biography-->
 			</section>
 			<!--end biography container-->
@@ -149,13 +160,36 @@
 
 	var debugList = [{title:"nome1", data:"data1", techs:["id1","id2","id3","id4"], url: "urltest1"}, {title:"nome2", data:"data2", techs:["id1","id2","id3"], url: "urltest2"}, {title:"nome3", data:"data3", techs:["id1","id2"], url: "urltest3"}, {title:"nome4", data:"data4", techs:["id1"], url: "urltest4"}, {title:"nome5", data:"data5", techs:["id1","id2"], url: "urltest5"}, {title:"nome6", data:"data6", techs:["id1","id2","id3","id4"], url: "urltest6"}];
 
+	var toggleLight = function toggleLight(){
+		if($("#switchLabel").html() === "off"){
+			$("#switchLabel").html("on");
+		} else {
+			$("#switchLabel").html("off");
+		}
+		$('body').toggleClass('lightOff');
+	};
+
 	var toggleDDL = function toggleDDL() {
 		var isOpen = ($("#portfolio-ddl-button").attr("data-isOpen") === 'true');
 		$("#portfolio-ddl-button").attr("data-isOpen", !isOpen);
 
 		animDDLIcon(isOpen);
 		fillDDLList(isOpen);
-	}
+	};
+
+	var fillDDLList = function animDDLIcon(isOpen){
+		if(!isFilled){
+			for (var i = 0; i < debugList.length; i++)
+			{
+				if(i % 2 == 0)
+					$("#portfolio-ddl-list").append('<div class="portfolio-ddl-item left-all">'+debugList[i].title+'</div>');			
+				else
+					$("#portfolio-ddl-list").append('<div class="portfolio-ddl-item right-all">'+debugList[i].title+'</div>');		
+			}
+			isFilled = true;
+		} 
+		animDDLList(isOpen);	
+	};
 
 	var animDDLIcon = function animDDLIcon(isOpen){
 		if(isOpen){
@@ -171,22 +205,6 @@
 		}			
 	};
 
-	var fillDDLList = function animDDLIcon(isOpen){
-		if(!isFilled){
-			for (var i = 0; i < debugList.length; i++)
-			{
-
-				if(i % 2 == 0)
-					$("#portfolio-ddl-list").append('<div class="portfolio-ddl-item left-all"></div>');				
-				else
-					$("#portfolio-ddl-list").append('<div class="portfolio-ddl-item right-all"></div>');				
-			}
-
-			isFilled = true;
-		} 
-
-		animDDLList(isOpen);	
-	};
 
 	var animDDLList = function animDDLIcon(isOpen){
 		if(isOpen){

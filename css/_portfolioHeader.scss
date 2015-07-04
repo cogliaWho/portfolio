@@ -2,6 +2,8 @@ $headerH: 50px;
 
 header{
 	height: $headerH;
+	padding-left: 40px;
+	padding-right: 40px;
 	/*position: fixed;
 	left: 0px;
 	top: 0px;*/
@@ -12,24 +14,21 @@ header [class*='col-']{
 	height: 100%;
 }
 
-.header-logo{
+.header-switch{
+	cursor: pointer;
 	@include flexbox();
 	align-items: center;
+	text-align: center;
 	justify-content: space-around;
-	a{
-		width: 100%;
-		height: 100%;
-		text-align: center;
-		padding: 5px;
-		img{
-			width: auto;
-			height: 100%;
-		}
+	text-transform: uppercase;
+	font-size: 100%;
+	span{
+		color: deeppink;
 	}
 }
 
 .social-label{
-	width: 30%;
+	width: 35%;
 	height: 100%;
 	float: left;
 	@include flexbox();
@@ -39,7 +38,7 @@ header [class*='col-']{
 }
 
 .social-icon-wrapper{
-	width: 40%;
+	width: 65%;
 	height: 100%;
 	float: left;
 	@include flexbox();
@@ -70,18 +69,18 @@ header [class*='col-']{
 	justify-content: space-between;
 	text-transform: uppercase;
 	padding: 5px;
-	padding-left: 10px;
+	padding-left: 0px;
 	position: relative;
-	
-	.portfolio-ddl-label{
+	border-left: 2px solid deeppink;
 
+	.portfolio-ddl-label{
+		padding-left: 10px;
 	}
 
 	.portfolio-ddl-icon{
 		position: relative;
 
 		.ddl-icon-bar{
-			background-color: black;
 			position: absolute;
 			-webkit-transform-origin: 50% 50%;
 			-moz-transform-origin: 50% 50%;
@@ -109,7 +108,7 @@ header [class*='col-']{
 		left: 0px;
 		position: absolute;
 		width: 100%;
-		height: 150px;
+		height: auto;
 		overflow: auto;
 		overflow-x: hidden;
 		display: none; 
@@ -117,10 +116,10 @@ header [class*='col-']{
 		.portfolio-ddl-item{
 			width: 100%;
 			height: 50px;
-			background-color: white;
 			position: relative;
 			@include flexbox();
 			align-items: center;
+			border-right: 2px solid deeppink;
 
 			.portfolio-ddl-title{
 				width: 70%;
@@ -148,6 +147,18 @@ header [class*='col-']{
 				height: 20px;
 			}
 		}
+	}
+}
+
+.language-selector{
+	@include flexbox();
+	align-items: center;
+	justify-content: space-around;
+
+	div{
+		height: 80%;
+		width: 40%;
+		background-color: deeppink;
 	}
 }
 
