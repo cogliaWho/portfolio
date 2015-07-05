@@ -4,3 +4,37 @@
 .container-skills [class*='col-']{
 	height: 100%;
 }
+
+.graph-total{
+  width: 100%;
+  height: 50%;
+  box-sizing: border-box;
+  float: left;
+}
+
+.graph-total .arc {
+    stroke-weight: 0.1;
+    fill: #f0a417;
+}
+
+.radial {
+    border-radius: 3px;
+    background: #FFFFFF;
+    color: #000;
+}
+
+.radial-svg .background{
+  fill: transparent;
+}
+
+.radial-svg .component path{
+  fill: #c6c6c6;
+}
+
+.radial-svg .labels{
+  display: none;
+}
+
+.radial-svg  .arcs .arc{
+  fill: deeppink;
+}

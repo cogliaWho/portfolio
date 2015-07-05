@@ -1,5 +1,5 @@
 .container-bio{
-	height: 100%;	
+	height: 100%;
 }
 
 .container-bio [class*='col-']{
@@ -7,8 +7,8 @@
 }
 
 .bio-description{
-	overflow: hidden; 
-	height: 65%;
+	overflow: hidden;
+	height: 60%;
 	width: 100%;
 	p{
 		font-size: 120%;
@@ -23,11 +23,10 @@
 }
 
 .bio-img{
-	height: 35%;
+	height: 40%;
 	width: 100%;
 	max-height: 500px;
 	overflow: hidden;
-	background-image: url('../resources/images/_MG_6839.jpg');
 	background-size: cover;
 	background-position-y: 15%;
 	/*img{
@@ -39,4 +38,9 @@
 	box-shadow: inset 0 4px 6px rgba(255, 255, 255, 0.3),
 				inset 0 -4px 6px rgba(0, 0, 0, 0.3),
 				rgba(255, 255, 255, 0.9);
+
+	img{
+		width: 100%;
+		height: auto;
+	}
 }

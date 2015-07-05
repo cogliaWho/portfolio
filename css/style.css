@@ -53,7 +53,7 @@ table {
 body, html {
   /*background-color: rgb(255, 244, 215);
   background-color: rgb(255, 255, 255);*/
-  font-family: 'Cuprum', sans-serif;
+  font-family: 'Istok Web', sans-serif;
   width: 100%; }
 
 a {
@@ -789,7 +789,7 @@ a:hover {
 
 /* BG COLOR */
 .mred {
-  background-color: #b50000; }
+  background-color: #b50000 !important; }
 
 .bblack {
   background-color: #000000; }
@@ -868,74 +868,6 @@ a:hover {
 .w5 {
   width: 5%; }
 
-.main {
-  height: 100%;
-  width: 100%;
-  max-width: 1600px;
-  margin: 0 auto; }
-
-.lightOn {
-  background-color: #EEEEEE;
-  color: #000000;
-  -webkit-transition: all 500ms ease;
-  -moz-transition: all 500ms ease;
-  -ms-transition: all 500ms ease;
-  -o-transition: all 500ms ease;
-  transition: all 500ms ease; }
-  .lightOn section {
-    background-color: #EEEEEE;
-    color: #000000;
-    -webkit-transition: all 500ms ease;
-    -moz-transition: all 500ms ease;
-    -ms-transition: all 500ms ease;
-    -o-transition: all 500ms ease;
-    transition: all 500ms ease; }
-  .lightOn .portfolio-ddl-item {
-    background-color: #EEEEEE;
-    -webkit-transition: all 500ms ease;
-    -moz-transition: all 500ms ease;
-    -ms-transition: all 500ms ease;
-    -o-transition: all 500ms ease;
-    transition: all 500ms ease; }
-  .lightOn .ddl-icon-bar {
-    background-color: black;
-    -webkit-transition: all 500ms ease;
-    -moz-transition: all 500ms ease;
-    -ms-transition: all 500ms ease;
-    -o-transition: all 500ms ease;
-    transition: all 500ms ease; }
-
-.lightOff {
-  background-color: #000000;
-  color: #c6c6c6;
-  -webkit-transition: all 500ms ease;
-  -moz-transition: all 500ms ease;
-  -ms-transition: all 500ms ease;
-  -o-transition: all 500ms ease;
-  transition: all 500ms ease; }
-  .lightOff section {
-    background-color: #000000;
-    color: #c6c6c6;
-    -webkit-transition: all 500ms ease;
-    -moz-transition: all 500ms ease;
-    -ms-transition: all 500ms ease;
-    -o-transition: all 500ms ease;
-    transition: all 500ms ease; }
-  .lightOff .portfolio-ddl-item {
-    background-color: #000000;
-    -webkit-transition: all 500ms ease;
-    -moz-transition: all 500ms ease;
-    -ms-transition: all 500ms ease;
-    -o-transition: all 500ms ease;
-    transition: all 500ms ease; }
-  .lightOff .ddl-icon-bar {
-    background-color: #c6c6c6;
-    -webkit-transition: all 500ms ease;
-    -moz-transition: all 500ms ease;
-    -ms-transition: all 500ms ease;
-    -o-transition: all 500ms ease;
-    transition: all 500ms ease; }
-
 header {
   height: 50px;
   padding-left: 40px;
@@ -966,7 +898,8 @@ header [class*='col-'] {
   text-transform: uppercase;
   font-size: 100%; }
   .header-switch span {
-    color: deeppink; }
+    color: deeppink;
+    font-size: 110%; }
 
 .social-label {
   width: 35%;
@@ -1413,7 +1346,7 @@ header [class*='col-'] {
 
 .bio-description {
   overflow: hidden;
-  height: 65%;
+  height: 60%;
   width: 100%; }
   .bio-description p {
     font-size: 120%;
@@ -1424,11 +1357,10 @@ header [class*='col-'] {
     color: red; }
 
 .bio-img {
-  height: 35%;
+  height: 40%;
   width: 100%;
   max-height: 500px;
   overflow: hidden;
-  background-image: url("../resources/images/_MG_6839.jpg");
   background-size: cover;
   background-position-y: 15%;
   /*img{
@@ -1437,25 +1369,127 @@ header [class*='col-'] {
   }*/
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-shadow: inset 0 4px 6px rgba(255, 255, 255, 0.3), inset 0 -4px 6px rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0.9); }
+  .bio-img img {
+    width: 100%;
+    height: auto; }
 
 .container-skills [class*='col-'] {
   height: 100%; }
+
+.graph-total {
+  width: 100%;
+  height: 50%;
+  box-sizing: border-box;
+  float: left; }
+
+.graph-total .arc {
+  stroke-weight: 0.1;
+  fill: #f0a417; }
+
+.radial {
+  border-radius: 3px;
+  background: #FFFFFF;
+  color: #000; }
+
+.radial-svg .background {
+  fill: transparent; }
+
+.radial-svg .component path {
+  fill: #c6c6c6; }
+
+.radial-svg .labels {
+  display: none; }
+
+.radial-svg .arcs .arc {
+  fill: deeppink; }
 
 .container-contact [class*='col-'] {
   height: 100%; }
 
 footer {
   height: 30px;
-  background-color: white;
   border-top: 2px solid deeppink; }
 
 footer [class*='col-'] {
   height: 100%; }
 
+@media (min-width: 1520px) {
+  .bio-description p {
+    font-size: 190%; } }
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
+
+body {
+  display: inline-block; }
+
+.main {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto; }
+
+.lightOn {
+  background-color: #EEEEEE;
+  color: #000000;
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease; }
+  .lightOn section {
+    background-color: #EEEEEE;
+    color: #000000;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease; }
+  .lightOn .portfolio-ddl-item {
+    background-color: #EEEEEE;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease; }
+  .lightOn .ddl-icon-bar {
+    background-color: black;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease; }
+
+.lightOff {
+  background-color: #000000;
+  color: #c6c6c6;
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease; }
+  .lightOff section {
+    background-color: #000000;
+    color: #c6c6c6;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease; }
+  .lightOff .portfolio-ddl-item {
+    background-color: #000000;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease; }
+  .lightOff .ddl-icon-bar {
+    background-color: #c6c6c6;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease; }
 
 .row {
   float: left;

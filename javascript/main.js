@@ -16,12 +16,12 @@ var getHeight = function()
     return y;
 }
 
-var resizeSections = function(){
+var resizeSections = function(callback){
 	var sections = $("section");
 	var headerHeight = $(header).height();
 	var footerHeight = $(footer).height();
 	var documentHeight = getHeight();
-	
+
 	var standardH = documentHeight-headerHeight;
 	var lastElementH = standardH-footerHeight;
 
@@ -32,7 +32,19 @@ var resizeSections = function(){
 			elem.style.height = standardH+"px";
 		}
 	});
+
+  callback();
 };
+
+function addBioImage(){
+  //var container = document.getElementById('container-bio');
+  var imgBio = document.createElement("IMG");
+  var imgURL ="url(http://www.cogliawho.it/resources/images/_MG_6839.jpg)";
+  imgBio.src = "http://www.cogliawho.it/resources/images/_MG_6839.jpg";
+  document.getElementById("bio-img").appendChild(imgBio);
+
+  //document.getElementById('bio-img').style.backgroundImage = imgURL;
+}
 
 function loaded() {
 	console.log("Welcome!");
@@ -41,8 +53,35 @@ function loaded() {
 
 	if (ismobile == null){
 		//if not mobile
-		
-	} 
-	
-	resizeSections();
+
+	}
+
+	resizeSections(function(){
+    addBioImage();
+  });
+  window.addEventListener("resize", resizeSections);
+
+
+//Graph
+  var totalElem = document.getElementById('graph-total');
+  var graphTotal = d3.select(totalElem);
+
+  function onClick1(){
+
+  }
+
+  function labelFunction(val,min,max) {
+
+  }
+
+  function start() {
+    var rp1 = radialProgress(totalElem)
+                          .onClick(onClick1)
+                          .diameter($(totalElem).width())
+                          .value(66)
+                          .render();
+  }
+
+setTimeout(function(){start();}, 1000);
+
 }

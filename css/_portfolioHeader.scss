@@ -24,6 +24,7 @@ header [class*='col-']{
 	font-size: 100%;
 	span{
 		color: deeppink;
+    font-size: 110%;
 	}
 }
 
@@ -111,7 +112,7 @@ header [class*='col-']{
 		height: auto;
 		overflow: auto;
 		overflow-x: hidden;
-		display: none; 
+		display: none;
 
 		.portfolio-ddl-item{
 			width: 100%;
@@ -342,7 +343,7 @@ header [class*='col-']{
 .anim-ddl-icon-open-horiz {
   -webkit-animation: 	anim-ddl-icon-open-horiz 	.7s ease-in-out 0s normal 1 forwards; /* Safari 4+ */
   -moz-animation:    	anim-ddl-icon-open-horiz 	.7s ease-in-out 0s normal 1 forwards; /* Fx 5+ */
-  -o-animation:      	anim-ddl-icon-open-horiz 	.7s ease-in-out 0s normal 1 forwards; /* Opera 12+ */  
+  -o-animation:      	anim-ddl-icon-open-horiz 	.7s ease-in-out 0s normal 1 forwards; /* Opera 12+ */
   animation:         	anim-ddl-icon-open-horiz 	.7s ease-in-out 0s normal 1 forwards; /* IE 10+, Fx 29+ */
 }
 
@@ -356,12 +357,12 @@ header [class*='col-']{
 .anim-ddl-icon-close-horiz {
   -webkit-animation: 	anim-ddl-icon-close-horiz 	.7s ease-in-out 0s normal 1 forwards; /* Safari 4+ */
   -moz-animation:    	anim-ddl-icon-close-horiz 	.7s ease-in-out 0s normal 1 forwards; /* Fx 5+ */
-  -o-animation:      	anim-ddl-icon-close-horiz 	.7s ease-in-out 0s normal 1 forwards; /* Opera 12+ */  
+  -o-animation:      	anim-ddl-icon-close-horiz 	.7s ease-in-out 0s normal 1 forwards; /* Opera 12+ */
   animation:         	anim-ddl-icon-close-horiz 	.7s ease-in-out 0s normal 1 forwards; /* IE 10+, Fx 29+ */
 }
 
 .anim-ddl-open-left {
-  -webkit-animation: 	anim-left-to-zero 	0.3s ease-out 0s normal 1 forwards;  
+  -webkit-animation: 	anim-left-to-zero 	0.3s ease-out 0s normal 1 forwards;
   -moz-animation:    	anim-left-to-zero 	0.3s ease-out 0s normal 1 forwards; /* Fx 5+ */
   -o-animation:      	anim-left-to-zero 	0.3s ease-out 0s normal 1 forwards; /* Opera 12+ */
   animation:         	anim-left-to-zero 	0.3s ease-out 0s normal 1 forwards; /* IE 10+, Fx 29+ */
@@ -376,7 +377,7 @@ header [class*='col-']{
 
 
 .anim-ddl-close-left {
-  -webkit-animation: 	anim-left-to-full 	0.3s ease-out 0s normal 1 forwards;  
+  -webkit-animation: 	anim-left-to-full 	0.3s ease-out 0s normal 1 forwards;
   -moz-animation:    	anim-left-to-full 	0.3s ease-out 0s normal 1 forwards; /* Fx 5+ */
   -o-animation:      	anim-left-to-full 	0.3s ease-out 0s normal 1 forwards; /* Opera 12+ */
   animation:         	anim-left-to-full 	0.3s ease-out 0s normal 1 forwards; /* IE 10+, Fx 29+ */

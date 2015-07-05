@@ -1,8 +1,9 @@
 body, html {
   /*background-color: rgb(255, 244, 215);
   background-color: rgb(255, 255, 255);*/
-  font-family: 'Cuprum', sans-serif;
+  font-family: 'Istok Web', sans-serif;
   width: 100%;
+
   //-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
@@ -13,18 +14,18 @@ a {
 a:link {
   color: #022560;
 }
- 
+
 a:active {
   color: #022560;
 }
- 
+
 a:visited {
   color: #022560;
   text-decoration: underline;
 }
 
 a:hover {
-  color: deeppink; 
+  color: deeppink;
   cursor: pointer;
 }
 
@@ -48,7 +49,7 @@ a:hover {
 .txt-glow-white{text-shadow: 0 0 0.5rem #000, 0 0 1rem #FFF;}
 .txt-glow-black{text-shadow: 0 0 0.5rem #000, 0 0 1rem #000;}
 
-.bold{font-weight:bold} 
+.bold{font-weight:bold}
 .txt-up {text-transform:uppercase}
 .txt-cap {text-transform:capitalize}
 .txt-low {text-transform:lowercase}
@@ -86,7 +87,7 @@ a:hover {
 
 /* PADDING */
 .pd0{padding:0;}
-.pd1{padding:.1rem} 
+.pd1{padding:.1rem}
 .pd2{padding:.2rem}
 .pd3{padding:.3rem}
 .pd4{padding:.4rem}
@@ -271,23 +272,23 @@ a:hover {
 .inline {display:inline;}
 .hide {display:none}
 .show {display:block}
- 
+
 .floatL{float:left;}
 .floatR{float:right;}
 .floatC, .clearBoth{clear:both; min-height:0px;height:0px;}
 
-.z999 {z-index:999;}  
+.z999 {z-index:999;}
 .z-1 {z-index:-1;}
 
 .rel{position:relative;}
-  
+
 /* BG COLOR */
-.mred{background-color:#b50000}
-.bblack{background-color:#000000} 
+.mred{background-color:#b50000!important}
+.bblack{background-color:#000000}
 .bwhite{background-color:#ffffff}
 .aagrey{background-color:#AAAAAA}
 .transpBG{background-color:transparent}
-   
+
 /* STRUCTURE HEIGHTS */
 .h10{height:1rem}
 .h20{height:2rem}
