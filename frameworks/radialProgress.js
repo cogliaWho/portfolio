@@ -65,8 +65,8 @@ function radialProgress(parent) {
 
             measure();
 
-            svg.attr("width", __width)
-                .attr("height", __height);
+            svg.attr("width", _diameter)
+                .attr("height", _diameter);
 
 
             var background = enter.append("g").attr("class","component")

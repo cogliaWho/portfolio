@@ -6,3 +6,14 @@ footer{
 footer [class*='col-']{
 	height: 100%;
 }
+
+.footer{
+	@include flexbox();
+	-ìwebkit-align-items: center;
+	align-items: center;
+}
+
+.footer-info{
+	padding-left: 20px;
+	font-size: .8rem
+}

@@ -3,14 +3,36 @@
 
 .container-skills [class*='col-']{
 	height: 100%;
+  padding: 20px;
 }
 
-.graph-total{
+.skills-nav{
+  width: 100%;
+  height: 100px;
+  background-color: red;
+}
+
+.graph-row{
+  display: inline-block;
+  width: 100%;
+  padding-top: 20px;
+  @include flexbox();
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.graph-container{
+  width: 200px;
+  height: 200px;
+  box-sizing: border-box;  
+}
+
+/*.graph-total{
   width: 100%;
   height: 50%;
-  box-sizing: border-box;
-  float: left;
-}
+  
+}*/
 
 .graph-total .arc {
     stroke-weight: 0.1;
@@ -37,4 +59,41 @@
 
 .radial-svg  .arcs .arc{
   fill: deeppink;
+}
+
+
+
+.skill-title{
+  padding-top: 20px;
+  font-size: 5rem
+}
+
+.skill-wrap{
+  display: inline-block;
+  width: 100%;
+  height: 50px;
+
+  @include flexbox();
+  align-items: center;
+  justify-content: space-around;
+}
+
+.skill-name{
+  width: 50%;
+  font-size: 1.5rem;
+  float: left;
+  padding-left: 20px;
+}
+
+.skill-progressBar{
+  width: 50%;
+  height: 70%;
+  background-color: black;
+  float: left;
+}
+
+.skill-progress{
+  height: 100%;
+  background-color: white;
+  border-right: 4px deeppink solid; 
 }

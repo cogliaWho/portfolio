@@ -29,12 +29,12 @@ header [class*='col-']{
 }
 
 .social-label{
-	width: 35%;
+	width: 15%;
 	height: 100%;
 	float: left;
 	@include flexbox();
 	align-items: center;
-	justify-content: space-around;
+	justify-content: flex-start;
 	text-transform: uppercase;
 }
 
@@ -43,7 +43,7 @@ header [class*='col-']{
 	height: 100%;
 	float: left;
 	@include flexbox();
-	justify-content: space-around;
+	justify-content: flex-start;
 
 	.social-icon{
 		width: 50px;

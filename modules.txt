@@ -1,0 +1,24 @@
+- header
+ - social icons
+ - light switch
+ - language triggers
+ - portfolio ddl button
+  - portfolio item
+ - blog button
+
+- bio
+ - bio img
+ - bio description
+
+- skills
+ - skill title
+ - skill name
+ - skill bar
+
+- contact form
+ - contact field
+ - contact label
+ - submint button
+
+- footer
+ - info
