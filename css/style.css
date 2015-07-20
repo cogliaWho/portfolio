@@ -1435,12 +1435,14 @@ header [class*='col-'] {
 
 .skill-title {
   padding-top: 20px;
-  font-size: 5rem; }
+  font-size: 5rem;
+  padding-left: 20px; }
 
 .skill-wrap {
   display: inline-block;
-  width: 100%;
+  width: 80%;
   height: 50px;
+  margin: 0 auto;
   display: -webkit-box;
   /* OLD - iOS 6-, Safari 3.1-6 */
   display: -moz-box;
@@ -1458,7 +1460,8 @@ header [class*='col-'] {
   width: 50%;
   font-size: 1.5rem;
   float: left;
-  padding-left: 20px; }
+  padding-right: 20px;
+  text-align: right; }
 
 .skill-progressBar {
   width: 50%;
@@ -1475,6 +1478,10 @@ header [class*='col-'] {
   height: 100%; }
 
 .contact-field {
+  width: 80%;
+  float: none;
+  margin: 0 auto;
+  padding: 20px 0;
   display: -webkit-box;
   /* OLD - iOS 6-, Safari 3.1-6 */
   display: -moz-box;
@@ -1485,11 +1492,14 @@ header [class*='col-'] {
   /* NEW - Chrome */
   display: flex;
   /* NEW, Spec - Opera 12.1, Firefox 20+ */
-  -├¼webkit-align-items: center;
-  align-items: center; }
+  -webkit-align-items: center;
+  align-items: center;
+  flex-wrap: wrap; }
 
 .contact-label {
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  text-align: right;
+  padding-right: 20px; }
 
 .contact-textBox {
   width: 100%;

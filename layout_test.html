@@ -26,7 +26,7 @@
 		<div id="main" class="main">
 			<!--header element with in order left from right: social icons, menu for old portfolios, blog button-->
 			<header id="header" class="header row">
-				<!--old portfolios menu
+				<!--DDL portfolios menu
 				<div id="portfolio-ddl-button" class="col-1-4 portfolio-ddl" onclick="toggleDDL();" data-isOpen="false">
 					<div class="portfolio-ddl-label">switch portfolio</div>
 					<div id="portfolio-ddl-icon" class="portfolio-ddl-icon">
@@ -37,10 +37,10 @@
 
 					</div>
 				</div>
-				end old portfolios menu-->
+				end DDL portfolios menu-->
 				<!--social icons-->
 				<div class="col-3-4 social">
-					<div class="social-label"><p>find me here:</p></div>
+					<div class="social-label"><p class="translate-text" data-translateID="lang-findMe">find me here:</p></div>
 					<div class="social-icon-wrapper">
 						<a href="https://www.linkedin.com/pub/lorenzo-cogliati/46/723/449" class="social-icon linkedin-icon">
 							<img src="resources/images/linkedin-active.png">
@@ -66,13 +66,15 @@
 				end blog button-->
 				<!--switch light header-->
 				<div class="col-1-8 header-switch" onclick="toggleLight();">
-					<p>turn <span id="switchLabel">off</span> the light</p>
+					<p class="translate-text" data-translateID="lang-turnLight">
+						turn <span id="switchLabel">off</span> the light
+					</p>
 				</div>
 				<!--end switch light-->
 				<!--language selector-->
 				<div class="col-1-8 language-selector">
-					<div class="language-flag">ita</div>
-					<div class="language-flag">eng</div>
+					<div class="language-flag" data-langID="ita">ita</div>
+					<div class="language-flag" data-langID="eng">eng</div>
 				</div>
 				<!--end language selector-->
 			</header>
@@ -86,16 +88,16 @@
 				<!--end logo/avatar-->
 				<!--biography-->
 				<article class="bio-description row-pad">
-					<p>
+					<p class="translate-text" data-translateID="lang-bioDescription">
 						Hello! I'm Lorenzo and I'm currently working for Avanade, a cunsultant group partner of Microsoft....
 						</br>
 						In the last years I worked on mobile games for DeNA Vancouver. Started as a front end developer for web-based games I moved to work on a puzzle/RPG game developed with Unity3D (C#). I really like to focus on UI and UX.
-					</p>
-					<p>
+					</br>
+					</br>
 						Hello! I'm Lorenzo and I'm currently working for Avanade, a cunsultant group partner of Microsoft....
 						In the last years I worked on mobile games for DeNA Vancouver. Started as a front end developer for web-based games I moved to work on a puzzle/RPG game developed with Unity3D (C#). I really like to focus on UI and UX.
-					</p>
-					<p>
+					</br>
+					</br>
 						Hello! I'm Lorenzo and I'm currently working for Avanade, a cunsultant group partner of Microsoft....
 						In the last years I worked on mobile games for DeNA Vancouver. Started as a front end developer for web-based games I moved to work on a puzzle/RPG game developed with Unity3D (C#). I really like to focus on UI and UX.
 					</p>
@@ -105,7 +107,7 @@
 			<!--end biography container-->
 			<!--skill container with D3 animations-->
 			<section id="container-skills" class="container-skills row row-pad ">
-				<h1 class="skill-title">LABEL</h1>
+				<h1 class="skill-title" class="translate-text" data-translateID="lang-skillClient">LABEL</h1>
 				<div class="skill-wrap">
 					<div class="skill-name">HTML5 - CSS3</div>
 					<div class="skill-progressBar"><div class="skill-progress w100"></div></div>
@@ -146,7 +148,7 @@
 					<div class="skill-name">Test label skill long name, yeah long one</div>
 					<div class="skill-progressBar"><div class="skill-progress w33"></div></div>
 				</div>
-				<h1 class="skill-title">LABEL 2</h1>
+				<h1 class="skill-title" class="translate-text" data-translateID="lang-skillServer">LABEL 2</h1>
 				<div class="skill-wrap">
 					<div class="skill-name">Test label skill long name, yeah long one</div>
 					<div class="skill-progressBar"><div class="skill-progress w100"></div></div>
@@ -167,7 +169,7 @@
 					<div class="skill-name">Test label skill long name, yeah long one</div>
 					<div class="skill-progressBar"><div class="skill-progress w33"></div></div>
 				</div>
-				<h1 class="skill-title">LABEL 3</h1>
+				<h1 class="skill-title"  class="translate-text" data-translateID="lang-skillOther">LABEL 3</h1>
 				<div class="skill-wrap">
 					<div class="skill-name">Test label skill long name, yeah long one</div>
 					<div class="skill-progressBar"><div class="skill-progress w100"></div></div>
@@ -215,62 +217,60 @@
 			<!--end skill container-->
 			<!--contact form container-->
 			<section id="container-contact" class="container-contact row row-pad">
-				<h1 class="skill-title">Contact</h1>
-				<div id="contact-name" class="row row-pad contact-field">
+				<h1 class="skill-title" class="translate-text" data-translateID="lang-contactTitle">Contact</h1>
+				<div id="contact-name" class="contact-field">
 					<div class="col-1-4">
-						<p class="contact-label">Name <span id="alertName" class="contact-required">*</span></p>
+						<p class="contact-label translate-text" data-translateID="lang-contactName">Name <span id="alertName" class="contact-required">*</span></p>
 					</div>
-					<div class="col-1-2">
+					<div class="floatL w75 pl20">
 						<input class="contact-textBox" type="text" id="name" name="name">
 					</div>
-					<div class="col-1-4">
-						<p class="contact-errorMsg">Error message</p>
+					<div class="col-1">
+						<p class="contact-errorMsg translate-text" data-translateID="lang-contactNameError">Error message</p>
 					</div>
 				</div>
 
-				<div id="contact-email" class="row row-pad contact-field">
+				<div id="contact-email" class="contact-field">
 					<div class="col-1-4">
-						<p class="contact-label">E-mail <span id="alertEmail" class="contact-required">*</span></p>
+						<p class="contact-label translate-text" data-translateID="lang-contactEmail">E-mail <span id="alertEmail" class="contact-required">*</span></p>
 					</div>
-					<div class="col-1-2">
+					<div class="floatL w75 pl20">
 						<input class="contact-textBox" type="text" id="email" name="email">
 					</div>
-					<div class="col-1-4">
-						<p class="contact-errorMsg">Error message</p>
+					<div class="col-1">
+						<p class="contact-errorMsg translate-text" data-translateID="lang-contactEmailError">Error message</p>
 					</div>
 				</div>
 
-				<div id="contact-subject" class="row row-pad contact-field">
+				<div id="contact-subject" class="contact-field">
 					<div class="col-1-4">
-						<p class="contact-label">Subject <span id="alertSubject" class="contact-required">*</span></p>
+						<p class="contact-label translate-text" data-translateID="lang-contactSubject">Subject <span id="alertSubject" class="contact-required">*</span></p>
 					</div>
-					<div class="col-1-2">
+					<div class="floatL w75 pl20">
 						<input class="contact-textBox" type="text" id="subject" name="subject">
 					</div>
-					<div class="col-1-4">
-						<p class="contact-errorMsg">Error message</p>
+					<div class="col-1">
+						<p class="contact-errorMsg translate-text" data-translateID="lang-contactSubjectError">Error message</p>
 					</div>
 				</div>
 
-				<div id="contact-message" class="row row-pad contact-field">
+				<div id="contact-message" class="contact-field">
 					<div class="col-1-4">
-						<p class="contact-label">Message <span id="alertMessage" class="contact-required">*</span></p>
+						<p class="contact-label translate-text" data-translateID="lang-contactMessagee">Message <span id="alertMessage" class="contact-required">*</span></p>
 					</div>
-					<div class="col-1-2">
+					<div class="floatL w75 pl20">
 						<textarea class="contact-textarea" name="message" id="message"></textarea>
 					</div>
-					<div class="col-1-4">
-						<p class="contact-errorMsg">Error message</p>
+					<div class="col-1">
+						<p class="contact-errorMsg translate-text" data-translateID="lang-contactMessageError">Error message</p>
 					</div>
 				</div>
-				<div id="contact-name" class="row row-pad contact-field">
+				<div id="contact-name" class="contact-field">
 					<div class="col-1-4">
 					</div>
 					<!--Contact form container-->
 					<div class="col-1-2">
-						<button class="contact-btn" id="submit" name="submit">submit</button>
-					</div>
-					<div class="col-1-4">
+						<button class="contact-btn translate-text" data-translateID="lang-contactButton" id="submit" name="submit">submit</button>
 					</div>
 				</div>
 			</section>
@@ -278,7 +278,7 @@
 			<!--footer with copyright and signature-->
 			<footer id="footer" class="footer row">
 				<!--Signature-->
-				<p class="footer-info">cogliaWho production - 2015</p>
+				<p class="footer-info translate-text" data-translateID="lang-footerInfo">cogliaWho production - 2015</p>
 			</footer>
 			<!--end footer-->
 		</div>
@@ -287,8 +287,9 @@
 
 <!-- imported javascript -->
 <script type="text/javascript" src="frameworks/jquery.js"></script>
+<!--
 <script type="text/javascript" src="frameworks/jquery_transit.js"></script>
-<script type="text/javascript" src="frameworks/d3.min.js"></script>
 <script type="text/javascript" src="frameworks/radialProgress.js"></script>
+-->
 <script type="text/javascript" src="javascript/main.js"></script>
 <!-- end imported javascript -->

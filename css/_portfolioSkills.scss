@@ -65,13 +65,15 @@
 
 .skill-title{
   padding-top: 20px;
-  font-size: 5rem
+  font-size: 5rem;
+  padding-left: 20px;
 }
 
 .skill-wrap{
   display: inline-block;
-  width: 100%;
+  width: 80%;
   height: 50px;
+  margin: 0 auto;
 
   @include flexbox();
   align-items: center;
@@ -82,7 +84,8 @@
   width: 50%;
   font-size: 1.5rem;
   float: left;
-  padding-left: 20px;
+  padding-right: 20px;
+  text-align: right;
 }
 
 .skill-progressBar{
