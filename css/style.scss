@@ -30,22 +30,28 @@ body{
 
 .lightOn{
     background-color: #EEEEEE;
+    background-color: #cfba58;
     color: #000000;
+    color: #191919;
   @include transitionLight ();
 
   section{
     background-color: #EEEEEE;
-      color: #000000;
+    background-color: #cfba58;
+    color: #000000;
+    color: #191919;
     @include transitionLight ();
   }
 
   .portfolio-ddl-item{
     background-color: #EEEEEE;
+    background-color: #cfba58;
     @include transitionLight ();
   }
 
   .ddl-icon-bar{
     background-color: black;
+    background-color: #191919;
     @include transitionLight ();
   }
 }
@@ -53,22 +59,28 @@ body{
 
 .lightOff{
     background-color: #000000;
+    background-color: #191919;
     color: #c6c6c6;
+    color: #cfba58;
   @include transitionLight ();
 
   section{
     background-color: #000000;
+    background-color: #191919;
       color: #c6c6c6;
+      color: #cfba58;
     @include transitionLight ();
   }
 
   .portfolio-ddl-item{
     background-color: #000000;
+    background-color: #191919;
     @include transitionLight ();
   }
 
   .ddl-icon-bar{
     background-color: #c6c6c6;
+    background-color: #f0efd1;
     @include transitionLight ();
   }
 }

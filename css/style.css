@@ -1362,7 +1362,7 @@ header [class*='col-'] {
   width: 100%;
   max-height: 500px;
   overflow: hidden;
-  background-image: url("../resources/images/_MG_6839.jpg");
+  background-image: url("../resources/images/_MG_6380.jpg");
   background-size: cover;
   background-position-y: 15%;
   /*img{
@@ -1573,7 +1573,9 @@ body {
 
 .lightOn {
   background-color: #EEEEEE;
+  background-color: #cfba58;
   color: #000000;
+  color: #191919;
   -webkit-transition: all 500ms ease;
   -moz-transition: all 500ms ease;
   -ms-transition: all 500ms ease;
@@ -1581,7 +1583,9 @@ body {
   transition: all 500ms ease; }
   .lightOn section {
     background-color: #EEEEEE;
+    background-color: #cfba58;
     color: #000000;
+    color: #191919;
     -webkit-transition: all 500ms ease;
     -moz-transition: all 500ms ease;
     -ms-transition: all 500ms ease;
@@ -1589,6 +1593,7 @@ body {
     transition: all 500ms ease; }
   .lightOn .portfolio-ddl-item {
     background-color: #EEEEEE;
+    background-color: #cfba58;
     -webkit-transition: all 500ms ease;
     -moz-transition: all 500ms ease;
     -ms-transition: all 500ms ease;
@@ -1596,6 +1601,7 @@ body {
     transition: all 500ms ease; }
   .lightOn .ddl-icon-bar {
     background-color: black;
+    background-color: #191919;
     -webkit-transition: all 500ms ease;
     -moz-transition: all 500ms ease;
     -ms-transition: all 500ms ease;
@@ -1604,7 +1610,9 @@ body {
 
 .lightOff {
   background-color: #000000;
+  background-color: #191919;
   color: #c6c6c6;
+  color: #cfba58;
   -webkit-transition: all 500ms ease;
   -moz-transition: all 500ms ease;
   -ms-transition: all 500ms ease;
@@ -1612,7 +1620,9 @@ body {
   transition: all 500ms ease; }
   .lightOff section {
     background-color: #000000;
+    background-color: #191919;
     color: #c6c6c6;
+    color: #cfba58;
     -webkit-transition: all 500ms ease;
     -moz-transition: all 500ms ease;
     -ms-transition: all 500ms ease;
@@ -1620,6 +1630,7 @@ body {
     transition: all 500ms ease; }
   .lightOff .portfolio-ddl-item {
     background-color: #000000;
+    background-color: #191919;
     -webkit-transition: all 500ms ease;
     -moz-transition: all 500ms ease;
     -ms-transition: all 500ms ease;
@@ -1627,6 +1638,7 @@ body {
     transition: all 500ms ease; }
   .lightOff .ddl-icon-bar {
     background-color: #c6c6c6;
+    background-color: #f0efd1;
     -webkit-transition: all 500ms ease;
     -moz-transition: all 500ms ease;
     -ms-transition: all 500ms ease;
