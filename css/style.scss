@@ -30,14 +30,14 @@ body{
 
 .lightOn{
     background-color: #EEEEEE;
-    background-color: #cfba58;
+    //background-color: #cfba58;
     color: #000000;
     color: #191919;
   @include transitionLight ();
 
   section{
     background-color: #EEEEEE;
-    background-color: #cfba58;
+    //background-color: #cfba58;
     color: #000000;
     color: #191919;
     @include transitionLight ();
@@ -45,7 +45,7 @@ body{
 
   .portfolio-ddl-item{
     background-color: #EEEEEE;
-    background-color: #cfba58;
+    //background-color: #cfba58;
     @include transitionLight ();
   }
 
